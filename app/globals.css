@@ -11,7 +11,7 @@
 
 
 .section-background {
-  background-image: url('/images/hero-bg.jpg');
+  background-image: url('../public/Images/hero-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -23,7 +23,7 @@
   position: absolute;
   inset: 0;
   background-color: #193F52;
-  background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
+  background-image: url(https://www.transparenttextures.com/patterns/asfalt-light.png);
   opacity: 0.7;
   z-index: 0;
 }
@@ -36,7 +36,7 @@
 }
 
 .background {
-  background-image: url('/images/hero-bg.jpg');
+  background-image: url('../public/Images/hero-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -81,19 +81,19 @@
 }
 
 .person-1 {
-  background-image: url('/images/person-1.jpg');
+  background-image: url('../public/Images/person-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .person-2 {
-  background-image: url('/images/person-2.png');
+  background-image: url('../public/Images/person-2.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .person-3 {
-  background-image: url('/images/person-3.png');
+  background-image: url('../public/Images/person-3.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
