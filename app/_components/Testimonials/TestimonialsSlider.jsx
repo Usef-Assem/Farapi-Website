@@ -100,7 +100,7 @@ function TestimonialsSlider({ feedbacks, sliderRef }) {
                     <span
                       key={i}
                       className={`text-xl md:text-2xl ${
-                        i < feedback.Rate ? 'text-[#58F468]' : 'text-gray-600'
+                        i < feedback.Rate ? 'text-[#58F468]' : 'star-empty'
                       }`}
                     >
                       ★
