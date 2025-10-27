@@ -18,35 +18,31 @@ function PortfolioSlider({ slides, setCurrentSlide }) {
     autoplay: true,
     autoplaySpeed: 3000,
     centerMode: true,
-    centerPadding: '180px',
+    centerPadding: '80px',
     beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
-          centerPadding: '100px',
+          centerPadding: '60px',
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
-          centerPadding: '40px',
+          centerPadding: '30px',
         },
       },
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 1,
-          centerPadding: '30px',
+          centerPadding: '20px',
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          centerPadding: '20px',
+          centerPadding: '10px',
         },
       },
     ],
@@ -73,7 +69,7 @@ function PortfolioSlider({ slides, setCurrentSlide }) {
   }, [])
 
   return (
-    <div className="slider-container mt-8 w-full z-20 relative overflow-hidden">
+    <div className="slider-container mt-8 w-full z-20 relative overflow-x-hidden">
       <Slider ref={sliderRef} {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="px-2">
