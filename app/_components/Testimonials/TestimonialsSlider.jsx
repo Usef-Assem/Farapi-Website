@@ -6,29 +6,24 @@ import 'slick-carousel/slick/slick-theme.css'
 import Image from 'next/image'
 
 function TestimonialsSlider({ feedbacks, sliderRef }) {
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 640)
-    }
-    
-    checkMobile()
-    window.addEventListener('resize', checkMobile)
-    
-    return () => window.removeEventListener('resize', checkMobile)
+    setIsMounted(true)
   }, [])
+
+  if (!isMounted) return null
 
   const settings = {
     dots: false,
     infinite: true,
     speed: 400,
-    slidesToShow: 3,
+    slidesToShow: 3, // الوضع الافتراضي (لشاشات كبيرة)
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3500,
-    variableWidth: false,
+    centerMode: false,
     responsive: [
       {
         breakpoint: 1280,
@@ -50,7 +45,7 @@ function TestimonialsSlider({ feedbacks, sliderRef }) {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '60px',
         },
       },
       {
@@ -59,7 +54,7 @@ function TestimonialsSlider({ feedbacks, sliderRef }) {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: '30px',
+          centerPadding: '40px',
         },
       },
       {
@@ -76,8 +71,9 @@ function TestimonialsSlider({ feedbacks, sliderRef }) {
 
   return (
     <div className="slider-container mt-6 md:mt-8 w-full relative overflow-hidden">
-      <div className={isMobile ? 'px-2' : 'px-4 md:px-6 lg:px-8 max-w-7xl mx-auto'}>
+      <div className="px-2 md:px-6 lg:px-8 max-w-7xl mx-auto">
         <Slider ref={sliderRef} {...settings}>
+          {/* أول كارت ثابت */}
           <div className="px-2 md:px-3">
             <div className="group bg-[#E4E4E433] border border-transparent rounded-2xl md:rounded-3xl p-6 md:p-8 text-white transition-all duration-300 min-h-[350px] md:h-[380px] flex flex-col justify-between items-center text-center">
               <div className='w-full'>
@@ -88,6 +84,7 @@ function TestimonialsSlider({ feedbacks, sliderRef }) {
             </div>
           </div>
 
+          {/* باقي الكروت */}
           {feedbacks.map((feedback, index) => (
             <div key={index} className="px-2 md:px-3">
               <div className="group bg-[#E4E4E433] border border-transparent rounded-2xl md:rounded-3xl p-6 md:p-8 text-white transition-all duration-300 min-h-[350px] md:h-[380px] flex flex-col justify-between">
@@ -114,7 +111,7 @@ function TestimonialsSlider({ feedbacks, sliderRef }) {
                       <span
                         key={i}
                         className={`text-xl md:text-2xl ${
-                          i < feedback.Rate ? 'text-[#58F468]' : 'star-empty'
+                          i < feedback.Rate ? 'text-[#58F468]' : 'text-gray-600'
                         }`}
                       >
                         ★
