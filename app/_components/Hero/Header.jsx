@@ -12,9 +12,9 @@ export default function FarapiLanding() {
       <div className="light-circle-bottom" aria-hidden="true"></div>
 
 
-      <section className="absolute mt-30 inset-0 z-20 px-6 md:px-12 lg:px-20 pt-16 pb-20 md:pt-24 md:pb-32 flex flex-col justify-center">
+      <section className="absolute mt-20 md:mt-30 inset-0 z-20 px-6 md:px-12 lg:px-20 pt-16 pb-20 md:pt-24 md:pb-32 flex flex-col justify-center">
         <div className="max-w-7xl">
-          <h1 className="text-white font-[Salmond] text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+          <h1 className="text-white font-[Salmond] text-[38px] md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
             Innovation In Every
             <br />
             Line Of Custom Code
@@ -43,26 +43,26 @@ export default function FarapiLanding() {
             </div>
           </div>
 
-          <div className="flex font-[Salmond] flex-wrap justify-start md:justify-start lg:justify-between items-center gap-8 md:gap-12 lg:gap-20">
+          <div className="flex font-[Salmond] flex-wrap justify-start md:justify-start lg:justify-between items-center gap-6 md:gap-12 lg:gap-20">
             <div>
-              <p className="text-[#F4F0EC] text-[22px] font-bold mb-2">
+              <p className="text-[#F4F0EC] text-[20px] md:text-[22px] font-bold mb-2">
                 Clicks
               </p>
-              <p className="text-white text-4xl font-bold">1M+</p>
+              <p className="text-white text-2xl md:text-4xl font-bold">1M+</p>
             </div>
 
             <div>
-              <p className="text-[#F4F0EC] text-[22px] font-bold mb-2">
+              <p className="text-[#F4F0EC] text-[20px] md:text-[22px] font-bold mb-2">
                 Clients
               </p>
-              <p className="text-white text-4xl font-bold">7</p>
+              <p className="text-white text-2xl md:text-4xl font-bold">7</p>
             </div>
 
             <div>
-              <p className="text-[#F4F0EC] text-[22px] font-bold mb-2">
+              <p className="text-[#F4F0EC] text-[20px] md:text-[22px] font-bold mb-2">
                 Our Possibilities
               </p>
-              <p className="text-white text-4xl font-bold">∞</p>
+              <p className="text-white text-2xl md:text-4xl font-bold">∞</p>
             </div>
           </div>
         </div>
