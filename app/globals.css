@@ -1,0 +1,131 @@
+@import "tailwindcss";
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+@font-face {
+  font-family: "Salmond";
+  src: url("/fonts/salmond.light.ttf") format("truetype");
+  font-weight: 300; /* أو حسب نوع الملف */
+  font-display: swap;
+}
+
+
+.section-background {
+  background-image: url('/images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  /* min-height: 100vh; */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #193F52;
+  background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
+  opacity: 0.7;
+  z-index: 0;
+}
+.white-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #EFEFEC;
+  opacity: 0.9;
+  z-index: 10;
+}
+
+.background {
+  background-image: url('/images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.light-circle {
+  position: absolute;
+  top: -185px;          /* Move it slightly off the top edge */
+  right: -150px;        /* Move it slightly off the right edge */
+  width: 400px;         /* Width of the glow */
+  height: 350px;        /* Height of the glow */
+  background: radial-gradient(
+    circle at center,
+    rgba(242, 227, 17, 0.4) 100%,  /* soft center color (#11F2BE4D) */
+    rgba(17, 242, 190, 0.5) 30%, /* fade */
+    transparent 50%
+  );
+  filter: blur(220px);  /* softness of the glow */
+  opacity: 1;
+  z-index: 15;           /* above overlay but below content */
+  pointer-events: none; /* prevent mouse interaction */
+}
+
+.light-circle-bottom {
+  position: absolute;
+  top: 344.17px;
+  left: -550.65px;
+  width: 665.26px;
+  height: 665.26px;
+  background: radial-gradient(
+    circle at center,
+    rgba(242, 227, 17, 0.5) 100%,  /* soft center color (#11F2BE4D) */
+    rgba(17, 242, 189, 0.34) 30%, /* fade */
+    transparent 50%
+  );
+  filter: blur(200.27px);
+  border-radius: 50%;
+  transform: rotate(-100.16deg);
+  opacity: 1;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.person-1 {
+  background-image: url('/images/person-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.person-2 {
+  background-image: url('/images/person-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.person-3 {
+  background-image: url('/images/person-3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+        .light-effect {
+          width: 493px;
+          height: 370px;
+          top: -185px;
+          right: 0;
+          background: rgba(17, 242, 190, 0.3);
+          filter: blur(300px);
+          opacity: 1;
+          transform: rotate(-180deg);
+          pointer-events: none;
+        }
+
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .animate-scroll {
+          animation: scroll 10s linear infinite;
+        }
+
+.star-empty {
+  color: transparent;
+  -webkit-text-stroke: 1px white; /* يديك border أبيض حوالين النجمة */
+}
