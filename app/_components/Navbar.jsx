@@ -17,8 +17,8 @@ function Navbar() {
   ];
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50 bg-transparent">
-      <div className={`max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4 md:px-12 md:bg-transparent md:backdrop-blur-none ${isOpen ? 'bg-white/10 backdrop-blur-lg' : ''}`}>
+    <nav className="absolute top-0 left-0 w-full z-50">
+      <div className={`flex flex-wrap items-center justify-between mx-auto p-4 md:px-12 md:bg-transparent md:backdrop-blur-none ${isOpen ? 'bg-white/10 backdrop-blur-lg' : ''}`}>
         
         {/* Logo */}
         <Link href="/" className="flex items-center">

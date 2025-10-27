@@ -1,90 +1,84 @@
+'use client'
 import React, { useRef, useEffect } from 'react'
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
 import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 
 function PortfolioSlider({ slides, setCurrentSlide }) {
-  const sliderRef = useRef(null)
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 400,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    centerMode: true,
-    centerPadding: '80px',
-    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          centerPadding: '60px',
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          centerPadding: '30px',
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          centerPadding: '20px',
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          centerPadding: '10px',
-        },
-      },
-    ],
-  }
+  const swiperRef = useRef(null)
 
   useEffect(() => {
     const nextBtn = document.querySelector('.next')
     const prevBtn = document.querySelector('.prev')
 
-    const handleNext = () => sliderRef.current?.slickNext()
-    const handlePrev = () => sliderRef.current?.slickPrev()
-
-    if (nextBtn && prevBtn) {
-      nextBtn.addEventListener('click', handleNext)
-      prevBtn.addEventListener('click', handlePrev)
+    if (nextBtn && prevBtn && swiperRef.current) {
+      nextBtn.addEventListener('click', () => swiperRef.current.swiper.slideNext())
+      prevBtn.addEventListener('click', () => swiperRef.current.swiper.slidePrev())
     }
 
     return () => {
-      if (nextBtn && prevBtn) {
-        nextBtn.removeEventListener('click', handleNext)
-        prevBtn.removeEventListener('click', handlePrev)
+      if (nextBtn && prevBtn && swiperRef.current) {
+        nextBtn.removeEventListener('click', () => swiperRef.current.swiper.slideNext())
+        prevBtn.removeEventListener('click', () => swiperRef.current.swiper.slidePrev())
       }
     }
   }, [])
 
+  useEffect(() => {
+    const swiperEl = swiperRef.current?.swiper
+    if (!swiperEl) return
+
+    const container = document.querySelector('.slider-container')
+    const handleMouseEnter = () => swiperEl.autoplay.stop()
+    const handleMouseLeave = () => swiperEl.autoplay.start()
+
+    container.addEventListener('mouseenter', handleMouseEnter)
+    container.addEventListener('mouseleave', handleMouseLeave)
+
+    return () => {
+      container.removeEventListener('mouseenter', handleMouseEnter)
+      container.removeEventListener('mouseleave', handleMouseLeave)
+    }
+  }, [])
+
   return (
-    <div className="slider-container mt-8 w-full z-20 relative overflow-x-hidden">
-      <Slider ref={sliderRef} {...settings}>
+    <div className="slider-container mt-8 w-full z-20 relative overflow-hidden">
+      <Swiper
+        ref={swiperRef}
+        modules={[Navigation, Autoplay]}
+        spaceBetween={15}
+        slidesPerView={1.3}   
+        centeredSlides={true}      
+        loop={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex)}
+        className="mySwiper"
+        breakpoints={{
+          480: {slidesPerView: 1, spaceBetween: 20, centeredSlides: true},
+          768: {slidesPerView: 1.3, spaceBetween: 20, centeredSlides: true},
+          1024:{slidesPerView: 1.6, spaceBetween: 25, centeredSlides: true},
+        }}
+      >
         {slides.map((slide, index) => (
-          <div key={index} className="px-2">
-            <div className="relative group w-full">
-              <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px]">
+          <SwiperSlide key={index}>
+            <div className="relative group w-full flex mx-auto">
+              <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[550px]">
                 <Image
                   src={slide.img}
-                  alt={`Portfolio ${index + 1}`}
+                  alt={slide.title}
                   fill
-                  sizes="(max-width: 480px) 90vw, (max-width: 768px) 85vw, (max-width: 1024px) 70vw, 700px"
                   className="rounded-2xl shadow-lg object-cover transition-transform duration-500"
                   priority={index === 0}
                 />
               </div>
 
+              {/* Overlay Button */}
               <button
                 className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 -rotate-45 cursor-pointer"
                 aria-label="View project"
@@ -94,9 +88,9 @@ function PortfolioSlider({ slides, setCurrentSlide }) {
                 </div>
               </button>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </Slider>
+      </Swiper>
     </div>
   )
 }

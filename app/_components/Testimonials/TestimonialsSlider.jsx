@@ -1,136 +1,124 @@
 'use client'
-import React, { useState, useEffect } from 'react'
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import React, { useRef } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
 import Image from 'next/image'
 
 function TestimonialsSlider({ feedbacks, sliderRef }) {
-  const [isMounted, setIsMounted] = useState(false)
+  const swiperRef = useRef(null)
 
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
-
-  if (!isMounted) return null
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 400,
-    slidesToShow: 3, // الوضع الافتراضي (لشاشات كبيرة)
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3500,
-    centerMode: false,
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: '60px',
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: '40px',
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: '20px',
-        },
-      },
-    ],
-  }
+  // Expose Swiper methods to parent component
+  React.useImperativeHandle(sliderRef, () => ({
+    slickNext: () => swiperRef.current?.slideNext(),
+    slickPrev: () => swiperRef.current?.slidePrev(),
+  }))
 
   return (
-    <div className="slider-container mt-6 md:mt-8 w-full relative overflow-hidden">
-      <div className="px-2 md:px-6 lg:px-8 max-w-7xl mx-auto">
-        <Slider ref={sliderRef} {...settings}>
-          {/* أول كارت ثابت */}
-          <div className="px-2 md:px-3">
-            <div className="group bg-[#E4E4E433] border border-transparent rounded-2xl md:rounded-3xl p-6 md:p-8 text-white transition-all duration-300 min-h-[350px] md:h-[380px] flex flex-col justify-between items-center text-center">
-              <div className='w-full'>
-                <h2 className="text-5xl md:text-6xl lg:text-7xl text-start font-[Salmond] font-[450]">+50</h2>
-                <p className="text-lg md:text-xl font-medium text-start font-[Salmond] mt-2">Happy Users About Our <br /> Services</p>
-              </div>
-              <p className="text-lg md:text-xl text-start w-full text-white mt-auto font-[Salmond]">50+ People trusted us</p>
+    <div className="testimonials-slider mt-6 md:mt-8 w-full relative">
+      <Swiper
+        modules={[Navigation, Autoplay]}
+        spaceBetween={20}
+        slidesPerView={3}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
+        speed={400}
+        loop={true}
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper
+        }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1.2,
+            spaceBetween: 15,
+          },
+          480: {
+            slidesPerView: 1.2,
+            spaceBetween: 15,
+          },
+          640: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+        }}
+        className="testimonials-swiper px-4 md:px-6 lg:px-8 max-w-7xl mx-auto"
+      >
+        {/* First Card - Stats */}
+        <SwiperSlide>
+          <div className="group bg-[#E4E4E433] border border-transparent rounded-2xl md:rounded-3xl p-6 md:p-8 text-white transition-all duration-300 h-[350px] md:h-[380px] flex flex-col justify-between items-center text-center">
+            <div className='w-full'>
+              <h2 className="text-5xl md:text-6xl lg:text-7xl text-start font-[Salmond] font-[450]">+50</h2>
+              <p className="text-lg md:text-xl font-medium text-start font-[Salmond] mt-2">
+                Happy Users About Our <br /> Services
+              </p>
             </div>
+            <p className="text-lg md:text-xl text-start w-full text-white mt-auto font-[Salmond]">
+              50+ People trusted us
+            </p>
           </div>
+        </SwiperSlide>
 
-          {/* باقي الكروت */}
-          {feedbacks.map((feedback, index) => (
-            <div key={index} className="px-2 md:px-3">
-              <div className="group bg-[#E4E4E433] border border-transparent rounded-2xl md:rounded-3xl p-6 md:p-8 text-white transition-all duration-300 min-h-[350px] md:h-[380px] flex flex-col justify-between">
-                
-                <div className="flex items-center gap-3 md:gap-4">
-                  <div className="relative w-12 h-12 md:w-[60px] md:h-[60px] flex-shrink-0">
-                    <Image
-                      src={feedback.Avatar}
-                      alt={feedback.Name}
-                      fill
-                      sizes="60px"
-                      className="rounded-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-base md:text-lg">{feedback.Name}</h4>
-                    <p className="text-xs md:text-sm text-gray-300">{feedback.desc}</p>
-                  </div>
+        {/* Feedback Cards */}
+        {feedbacks.map((feedback, index) => (
+          <SwiperSlide key={index}>
+            <div className="group bg-[#E4E4E433] border border-transparent rounded-2xl md:rounded-3xl p-6 md:p-8 text-white transition-all duration-300 h-[350px] md:h-[380px] flex flex-col justify-between">
+              
+              <div className="flex items-center gap-3 md:gap-4">
+                <div className="relative w-12 h-12 md:w-[60px] md:h-[60px] flex-shrink-0">
+                  <Image
+                    src={feedback.Avatar}
+                    alt={feedback.Name}
+                    fill
+                    sizes="60px"
+                    className="rounded-full object-cover"
+                  />
                 </div>
-
-                <div className="mt-4 md:mt-6 flex flex-col items-start">
-                  <div className="flex gap-1 mb-2 md:mb-3">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <span
-                        key={i}
-                        className={`text-xl md:text-2xl ${
-                          i < feedback.Rate ? 'text-[#58F468]' : 'text-gray-600'
-                        }`}
-                      >
-                        ★
-                      </span>
-                    ))}
-                  </div>
-
-                  <h3 className="text-xl md:text-2xl font-medium font-[Salmond] mb-2">
-                    {feedback.ReviewTitle}
-                  </h3>
-                  <p className="text-sm md:text-base font-[Salmond] text-[#F5F4EE] font-medium leading-relaxed">
-                    {feedback.ReviewContent}
-                  </p>
+                <div>
+                  <h4 className="font-semibold text-base md:text-lg">{feedback.Name}</h4>
+                  <p className="text-xs md:text-sm text-gray-300">{feedback.desc}</p>
                 </div>
               </div>
+
+              <div className="mt-4 md:mt-6 flex flex-col items-start">
+                <div className="flex gap-1 mb-2 md:mb-3">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <span
+                      key={i}
+                      className={`text-xl md:text-2xl ${
+                        i < feedback.Rate ? 'text-[#58F468]' : 'text-gray-600'
+                      }`}
+                    >
+                      ★
+                    </span>
+                  ))}
+                </div>
+
+                <h3 className="text-xl md:text-2xl font-medium font-[Salmond] mb-2">
+                  {feedback.ReviewTitle}
+                </h3>
+                <p className="text-sm md:text-base font-[Salmond] text-[#F5F4EE] font-medium leading-relaxed">
+                  {feedback.ReviewContent}
+                </p>
+              </div>
             </div>
-          ))}
-        </Slider>
-      </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   )
 }
