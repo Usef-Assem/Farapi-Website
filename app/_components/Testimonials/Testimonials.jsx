@@ -75,8 +75,8 @@ function Testimonials() {
                 </div>
                 <div className='flex flex-col md:flex-col lg:flex-row justify-between items-start lg:items-center gap-6 lg:gap-0'>
                 <div className="content">
-                    <h4 className='text-white text-base md:text-lg font-[Salmond]'>Testimonials</h4>
-                    <p className='text-white text-3xl md:text-4xl lg:text-5xl font-[Salmond] font-semibold mt-3 md:mt-5'>What Our Clients Say <br /> About <span className='text-[#58F468]'>Farapi</span></p>
+                    <h4 className='text-white text-base md:text-lg font-[Salmond-medium]'>Testimonials</h4>
+                    <p className='text-white text-3xl md:text-4xl lg:text-5xl font-[Salmond-semibold] mt-3 md:mt-5'>What Our Clients Say <br /> About <span className='text-[#58F468]'>Farapi</span></p>
                 </div>
 
             <div className="slider-buttons flex">

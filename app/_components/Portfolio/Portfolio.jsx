@@ -46,16 +46,16 @@ function Portfolio() {
 
       <div className="flex flex-col md:flex-row justify-between z-20 relative items-start lg:items-center px-6 md:px-8 py-6 gap-6 lg:gap-0">
         <div>
-          <h2 className="text-3xl md:text-4xl font-[Salmond] lg:ms-25 font-bold mb-4 md:mb-7">
+          <h2 className="text-3xl md:text-4xl font-[Salmond-semibold] lg:ms-25 font-bold mb-4 md:mb-7">
             Portfolio <br /> Highlight
           </h2>
         </div>
 
-        <div className="text-left  md:text-left lg:text-right transition-all duration-500 w-full md:w-1/2 lg:w-auto">
-          <h4 className="text-lg md:text-xl text-start lg:text-start font-[Salmond] font-semibold">
+        <div className="text-left font-[Salmond-medium]  md:text-left lg:text-right transition-all duration-500 w-full md:w-1/2 lg:w-auto">
+          <h4 className="text-lg md:text-xl text-start lg:text-start">
             {slides[currentSlide].title}
           </h4>
-          <p className="font-[Salmond] font-semibold lg:text-start w-full lg:w-90 ">
+          <p className="lg:text-start w-full lg:w-90 ">
             {slides[currentSlide].subtitle}
           </p>
 

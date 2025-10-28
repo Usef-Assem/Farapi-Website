@@ -30,7 +30,7 @@ function Navbar() {
           {/* Desktop Let's Talk Button */}
           <Link
             href="/"
-            className="hidden md:flex items-center gap-2 text-white font-[Salmond] font-medium hover:text-[#58F468] transition-colors"
+            className="hidden md:flex items-center gap-2 text-white font-[Salmond-medium] hover:text-[#58F468] transition-colors"
           >
             Let&apos;s Talk
           </Link>
@@ -78,7 +78,7 @@ function Navbar() {
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className={`block py-2 px-3 md:p-0 text-white rounded-sm font-[Salmond] hover:bg-white/10 md:hover:bg-transparent md:hover:text-[#58F468] transition-colors ${
+                  className={`block font-[Salmond-medium] py-2 px-3 md:p-0 text-white rounded-sm hover:bg-white/10 md:hover:bg-transparent md:hover:text-[#58F468] transition-colors ${
                     index === 0 ? "bg-[#58F468] md:bg-transparent md:text-white" : ""
                   }`}
                   aria-current={index === 0 ? "page" : undefined}
@@ -95,7 +95,7 @@ function Navbar() {
                 className="w-full flex items-center justify-center gap-2 bg-white px-4 py-2 rounded-full hover:bg-[#58F468] transition-all duration-300 group"
                 onClick={() => setIsOpen(false)}
               >
-                <span className="font-[Salmond] font-medium text-[#002733]">
+                <span className="font-[Salmond-medium] text-[15px] text-[#002733]">
                   Let&apos;s Talk
                 </span>
                 <div className="w-8 h-8 bg-[#58F468] rounded-full flex items-center justify-center group-hover:bg-white transition-all duration-300">

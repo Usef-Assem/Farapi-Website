@@ -9,9 +9,28 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Salmond-news";
+  src: url("/fonts/Salmond - News") format("truetype");
+  font-weight: 450; 
+  font-display: swap;
+}
+@font-face {
+  font-family: "Salmond-medium";
+  src: url("/fonts/Salmond - Medium.ttf") format("truetype");
+  font-weight: 500; 
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Salmond-semibold";
   src: url("/fonts/salmond.semi-bold.ttf") format("truetype");
   font-weight: 600; 
+  font-display: swap;
+}
+@font-face {
+  font-family: "Salmond-Regular";
+  src: url("/fonts/salmond - Regular.ttf") format("truetype");
+  font-weight: 400; 
   font-display: swap;
 }
 

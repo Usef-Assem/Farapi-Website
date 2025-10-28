@@ -62,12 +62,12 @@ function TestimonialsSlider({ feedbacks, sliderRef }) {
         <SwiperSlide>
           <div className="group bg-[#E4E4E433] border border-transparent rounded-2xl md:rounded-3xl p-6 md:p-8 text-white transition-all duration-300 h-[350px] md:h-[380px] flex flex-col justify-between items-center text-center">
             <div className='w-full'>
-              <h2 className="text-5xl md:text-6xl lg:text-7xl text-start font-[Salmond] font-[450]">+50</h2>
-              <p className="text-lg md:text-xl font-medium text-start font-[Salmond] mt-2">
+              <h2 className="text-5xl md:text-6xl lg:text-7xl text-start font-[Salmond - News]">+50</h2>
+              <p className="text-lg md:text-xl lg:mt-6 text-start font-[Salmond-medium] mt-2">
                 Happy Users About Our <br /> Services
               </p>
             </div>
-            <p className="text-lg md:text-xl text-start w-full text-white mt-auto font-[Salmond]">
+            <p className="text-lg md:text-xl text-start w-full text-white mt-auto font-[Salmond-medium]">
               50+ People trusted us
             </p>
           </div>
@@ -89,8 +89,8 @@ function TestimonialsSlider({ feedbacks, sliderRef }) {
                   />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-base md:text-lg">{feedback.Name}</h4>
-                  <p className="text-xs md:text-sm text-gray-300">{feedback.desc}</p>
+                  <h4 className="font-[Salmond-medium] text-base md:text-lg">{feedback.Name}</h4>
+                  <p className="text-xs md:text-sm text-gray-300 font-[Salmond-Regular]">{feedback.desc}</p>
                 </div>
               </div>
 
@@ -108,10 +108,10 @@ function TestimonialsSlider({ feedbacks, sliderRef }) {
                   ))}
                 </div>
 
-                <h3 className="text-xl md:text-2xl font-medium font-[Salmond] mb-2">
+                <h3 className="text-xl md:text-2xl font-[Salmond-medium] mb-2">
                   {feedback.ReviewTitle}
                 </h3>
-                <p className="text-sm md:text-base font-[Salmond] text-[#F5F4EE] font-medium leading-relaxed">
+                <p className="text-sm md:text-base font-[Salmond - News] text-[#F5F4EE] leading-relaxed">
                   {feedback.ReviewContent}
                 </p>
               </div>
