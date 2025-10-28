@@ -1,5 +1,8 @@
 import React from 'react'
 import { Phone, Mail, ArrowRight, ArrowRightCircle } from 'lucide-react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
   return (
@@ -19,8 +22,8 @@ function Contact() {
             <div className="mt-8 md:mt-10 lg:mt-12 space-y-6">
               {/* Phone Number */}
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-                  <Phone className="w-8 h-8 text-black" />
+                <div className="w-8 h-8 rounded-full relative flex items-center justify-center shrink-0">
+                <FontAwesomeIcon icon={faPhone} style={{ color: "#002733" }} />
                 </div>
                 <div>
                   <h4 className="font-[Salmond] font-semibold text-lg text-[#1a1a1a]">Phone Number</h4>
@@ -30,8 +33,8 @@ function Contact() {
 
               {/* Email */}
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-                  <Mail className="w-8 h-8 text-black" />
+                <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0">
+                  <FontAwesomeIcon icon={faEnvelope} style={{ color: "#002733" }} />
                 </div>
                 <div>
                   <h4 className="font-[Salmond] font-semibold text-lg text-[#1a1a1a]">Email</h4>

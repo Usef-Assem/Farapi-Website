@@ -23,8 +23,9 @@ function Services() {
   return (
     <>
       <div className="relative section-background" id="services">
-        <div className="overlay"></div>
-        <section className="relative px-6 md:px-12 lg:px-20 py-16 md:py-24 overflow-hidden font-[Salmond] font-bold">
+      <div className="overlay absolute inset-0  bg-[#002733] opacity-80"></div>
+      <div className="asfalt-overlay z-10 opacity-55"></div>
+      <section className="relative px-6 md:px-12 lg:px-20 py-16 md:py-24 overflow-hidden font-[Salmond] font-bold">
         <div className="absolute top-1/2 right-[-150px] -translate-y-1/2 w-[400px] h-[400px] rounded-full 
                         bg-linear-to-l from-white/60 to-transparent blur-3xl opacity-70 pointer-events-none">
         </div>

@@ -64,8 +64,9 @@ function Testimonials() {
 
   return <>
         <div className="relative section-background">
-            <div className="overlay"></div>
-            <section className='z-20 relative p-6 md:p-10 lg:p-15'>
+      <div className="overlay absolute inset-0  bg-[#002733] opacity-80"></div>
+      <div className="asfalt-overlay z-10 opacity-55"></div>
+                  <section className='z-20 relative p-6 md:p-10 lg:p-15'>
                   <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-[-120px] right-[-100px] w-[400px] h-[400px] rounded-full 
                                     bg-linear-to-l from-white/50 to-transparent blur-3xl opacity-70"></div>
@@ -81,13 +82,13 @@ function Testimonials() {
             <div className="slider-buttons flex">
                 <button 
                     onClick={handlePrev}
-                    className="prev w-10 h-10 cursor-pointer flex justify-center items-center bg-white rounded-full hover:bg-[#58F468] transition-all"
+                    className="prev w-10 h-10 cursor-pointer flex justify-center items-center bg-white rounded-full"
                 >
                     <ArrowLeft />
                 </button>
                 <button 
                     onClick={handleNext}
-                    className="next w-10 h-10 cursor-pointer ms-3 flex justify-center items-center bg-white rounded-full hover:bg-[#58F468] transition-all"
+                    className="next w-10 h-10 cursor-pointer ms-3 flex justify-center items-center bg-white rounded-full"
                 >
                     <ArrowRight />
                 </button>

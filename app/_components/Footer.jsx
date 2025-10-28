@@ -11,10 +11,12 @@ import Link from 'next/link'
 function Footer() {
   return (
     <>
-    <div className='bg-[#DDDEE1]'>
+    <div className='bg-[#E6E6E6]'>
       <div className="relative flex justify-center section-background overflow-hidden rounded-t-[50px]">
-        <div className="overlay absolute z-20"></div>
-
+      <div className="overlay absolute inset-0  bg-[#002733] opacity-80"></div>
+      <div className="asfalt-overlay z-10 opacity-55">
+        
+      </div>
         <footer className="relative z-30 w-full py-12 px-6 md:px-8 text-white">
             <div className="absolute bottom-[-120px] right-[-100px] w-[400px] h-[400px] rounded-full 
                                     bg-linear-to-l from-white/40 to-transparent blur-3xl opacity-70"></div>
