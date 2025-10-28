@@ -46,7 +46,7 @@ function Portfolio() {
 
       <div className="flex flex-col md:flex-row justify-between z-20 relative items-start lg:items-center px-6 md:px-8 py-6 gap-6 lg:gap-0">
         <div>
-          <h2 className="text-3xl md:text-4xl font-[Salmond-semibold] lg:ms-25 font-bold mb-4 md:mb-7">
+          <h2 className="text-3xl md:text-5xl font-[Salmond-semibold] lg:ms-25 mb-4 md:mb-7">
             Portfolio <br /> Highlight
           </h2>
         </div>
