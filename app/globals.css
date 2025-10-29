@@ -34,6 +34,9 @@
   font-display: swap;
 }
 
+.ease-slider .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
 
 .section-background {
   background-image: url('../public/Images/hero-bg.jpg');

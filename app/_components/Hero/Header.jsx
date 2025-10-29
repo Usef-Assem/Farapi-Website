@@ -12,9 +12,9 @@ export default function Header() {
       <div className="absolute z-20 top-[-200] right-[-270] w-[493px] h-[370px] rounded-full 
             bg-[#11F2BE4D] blur-[90px] pointer-events-none">
       </div>
-            <div className="absolute z-20 top-[400] left-[-490] w-[665px] h-[665px] rounded-full 
-            bg-[#69FF8c] blur-[209px] pointer-events-none">
-      </div>
+        <div className="absolute z-20 top-[400] left-[-490] w-[665px] h-[665px] rounded-full 
+            md:bg-[#69FF8c] bg-[#4AB285] md:blur-[209px] blur-[100px] opacity-90 md:opacity-100 pointer-events-none">
+        </div>
 <div
   className="absolute z-5 w-[785px] h-[785px] rounded-full
              bg-[#5aaef8] opacity-70

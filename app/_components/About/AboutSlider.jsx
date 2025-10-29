@@ -1,9 +1,11 @@
 "use client";
 
 import React from "react";
-import dynamic from "next/dynamic";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+import { Autoplay } from "swiper/modules";
+
 import Azure from "../../../public/Images/Azure.png";
 import ReactImg from "../../../public/Images/reactjs.png";
 import next from "../../../public/Images/next.png";
@@ -13,45 +15,48 @@ import figma from "../../../public/Images/figma.png";
 import wordpress from "../../../public/Images/wordPress.png";
 import Image from "next/image";
 
-const Slider = dynamic(() => import("react-slick"), { ssr: false });
-
-function AboutSlider() {
+export default function AboutSlider() {
   const Images = [
     { img: Azure, alt: "AzureImg" },
     { img: ReactImg, alt: "ReactImg" },
-    { img: next, alt: "nextImg" },
-    { img: django, alt: "djangoImg" },
-    { img: fastApi, alt: "fastApiImg" },
-    { img: figma, alt: "figmaImg" },
-    { img: wordpress, alt: "wordpressImg" },
+    { img: next, alt: "NextImg" },
+    { img: django, alt: "DjangoImg" },
+    { img: fastApi, alt: "FastApiImg" },
+    { img: figma, alt: "FigmaImg" },
+    { img: wordpress, alt: "WordpressImg" },
   ];
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 3000,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 } },
-      { breakpoint: 600, settings: { slidesToShow: 2, slidesToScroll: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
-    ],
-  };
-
   return (
-    <Slider {...settings}>
+    <Swiper
+      modules={[Autoplay]}
+      autoplay={{
+        delay: 0,
+        disableOnInteraction: false,
+      }}
+      speed={4000} // سرعة الحركة
+      loop={true}
+      slidesPerView={4}
+      spaceBetween={20}
+      allowTouchMove={true}
+      className="mt-3 ease-slider"
+      breakpoints={{
+        1280: { slidesPerView: 4 },
+        992: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        0: { slidesPerView: 1 },
+      }}
+    >
       {Images.map((image, index) => (
-        <div key={index} className="mt-3 ms-2">
-          <Image src={image.img} alt={image.alt} />
-        </div>
+        <SwiperSlide key={index}>
+          <div className="flex justify-center items-center">
+            <Image
+              src={image.img}
+              alt={image.alt}
+              className="w-40 h-16 object-contain"
+            />
+          </div>
+        </SwiperSlide>
       ))}
-    </Slider>
+    </Swiper>
   );
 }
-
-export default AboutSlider;
