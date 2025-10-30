@@ -31,16 +31,16 @@ export default function AboutSlider() {
       modules={[Autoplay]}
       autoplay={{
         delay: 0,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
       }}
       speed={4000} // سرعة الحركة
       loop={true}
-      slidesPerView={4}
+      slidesPerView={6}
       spaceBetween={20}
       allowTouchMove={true}
       className="mt-3 ease-slider"
       breakpoints={{
-        1280: { slidesPerView: 4 },
+        1280: { slidesPerView: 5 },
         992: { slidesPerView: 3 },
         768: { slidesPerView: 2 },
         0: { slidesPerView: 1 },
@@ -52,7 +52,7 @@ export default function AboutSlider() {
             <Image
               src={image.img}
               alt={image.alt}
-              className="w-40 h-16 object-contain"
+              className="w-35 h-16 object-contain"
             />
           </div>
         </SwiperSlide>
