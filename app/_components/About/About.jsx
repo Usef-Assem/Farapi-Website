@@ -10,11 +10,15 @@ function About() {
   <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24 relative z-20 font-[Salmond-medium]">
     <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start max-w-6xl mx-auto">
       {/* Left Column */}
-      <div>
-        <p className="text-[#002733] font-bold text-[18px] mb-3 tracking-wide">About</p>
-        <h2 className="text-[#002733] text-4xl md:text-[45px] font-[Salmond-semibold] mb-10">
+      <div className='h-full flex flex-col justify-between'>
+        
+        <div>
+        <p className="text-[#002733] text-[18px] tracking-[100%]">About</p>
+        <h2 className="text-[#002733] text-4xl md:text-[45px] font-[Salmond-semibold] mt-8">
           Who we are
         </h2>
+        </div>
+
         <div className="hidden md:block">
           <LetsTalkButton />
         </div>

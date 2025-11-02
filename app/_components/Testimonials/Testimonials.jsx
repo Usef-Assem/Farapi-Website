@@ -66,7 +66,7 @@ function Testimonials() {
         <div className="relative section-background">
       <div className="overlay absolute inset-0  bg-[#002733] opacity-80"></div>
       <div className="asfalt-overlay z-10 opacity-55"></div>
-                  <section className='z-20 relative p-6 md:p-10 lg:p-15'>
+                  <section className='z-20 relative p-6 md:p-10 lg:px-30 lg:py-[104px]'>
                   <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-[-120px] right-[-100px] w-[400px] h-[400px] rounded-full 
                                     bg-linear-to-l from-white/50 to-transparent blur-3xl opacity-70"></div>
@@ -75,20 +75,20 @@ function Testimonials() {
                 </div>
                 <div className='flex flex-col md:flex-col lg:flex-row justify-between items-start lg:items-center gap-6 lg:gap-0'>
                 <div className="content">
-                    <h4 className='text-white text-base md:text-lg font-[Salmond-medium]'>Testimonials</h4>
-                    <p className='text-white text-3xl md:text-4xl lg:text-5xl font-[Salmond-semibold] mt-3 md:mt-5'>What Our Clients Say <br /> About <span className='text-[#58F468]'>Farapi</span></p>
+                    <h4 className='text-white text-base md:text-lg font-[Salmond-medium] mb-8 leading-[100%]'>Testimonials</h4>
+                    <p className='text-white text-3xl md:text-4xl lg:text-[56px] leading-[140%] font-[Salmond-semibold] mt-3 md:mt-5'>What Our Clients Say <br /> About <span className='text-[#58F468]'>Farapi</span></p>
                 </div>
 
             <div className="slider-buttons flex">
                 <button 
                     onClick={handlePrev}
-                    className="prev w-10 h-10 cursor-pointer flex justify-center items-center bg-white rounded-full"
+                    className="prev w-16 h-16 cursor-pointer flex justify-center items-center bg-white rounded-full"
                 >
                     <ArrowLeft />
                 </button>
                 <button 
                     onClick={handleNext}
-                    className="next w-10 h-10 cursor-pointer ms-3 flex justify-center items-center bg-white rounded-full"
+                    className="next w-16 h-16 cursor-pointer ms-3 flex justify-center items-center bg-white rounded-full"
                 >
                     <ArrowRight />
                 </button>

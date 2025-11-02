@@ -67,27 +67,29 @@ function PortfolioSlider({ slides, setCurrentSlide }) {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="relative group w-full flex mx-auto">
-              <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[550px]">
-                <Image
-                  src={slide.img}
-                  alt={slide.title}
-                  fill
-                  className="rounded-2xl shadow-lg object-cover transition-transform duration-500"
-                  priority={index === 0}
-                />
-              </div>
-
-              {/* Overlay Button */}
-              <button
-                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 -rotate-45 cursor-pointer"
-                aria-label="View project"
-              >
-                <div className="bg-white rounded-full p-4 shadow-lg">
-                  <ArrowRight className="text-black w-6 h-6" />
+            {({ isActive }) => (
+              <div className={`relative group w-full flex mx-auto max-w-[1090px] transition-opacity duration-500 ${isActive ? 'opacity-100' : 'opacity-50'}`}>
+                <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[550px]">
+                  <Image
+                    src={slide.img}
+                    alt={slide.title}
+                    fill
+                    className="rounded-2xl shadow-lg object-cover transition-transform duration-500"
+                    priority={index === 0}
+                  />
                 </div>
-              </button>
-            </div>
+
+                {/* Overlay Button */}
+                <button
+                  className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 -rotate-45 cursor-pointer"
+                  aria-label="View project"
+                >
+                  <div className="bg-white rounded-full p-4 shadow-lg">
+                    <ArrowRight className="text-black w-6 h-6" />
+                  </div>
+                </button>
+              </div>
+            )}
           </SwiperSlide>
         ))}
       </Swiper>

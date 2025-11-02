@@ -26,7 +26,7 @@ function Navbar() {
         </Link>
 
         {/* Desktop Let's Talk Button + Mobile Toggle */}
-        <div className="flex md:order-2 items-center gap-3">
+        <div className="flex md:order-2 items-center gap-6">
           {/* Desktop Let's Talk Button */}
           <Link
             href="/"
@@ -78,8 +78,8 @@ function Navbar() {
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className={`block font-[Salmond-medium] py-2 px-3 md:p-0 text-white rounded-sm hover:bg-white/10 md:hover:bg-transparent md:hover:text-[#58F468] transition-colors ${
-                    index === 0 ? "bg-[#58F468] md:bg-transparent md:text-white" : ""
+                  className={`block py-2 px-3 md:p-0 md:hover:text-[#58F468] transition-colors ${
+                    index === 0 ? "text-[#58F468] font-[Salmond-semibold]" : "text-white font-[Salmond-medium]"
                   }`}
                   aria-current={index === 0 ? "page" : undefined}
                   onClick={() => setIsOpen(false)}

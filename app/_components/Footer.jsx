@@ -17,7 +17,7 @@ function Footer() {
       <div className="asfalt-overlay z-10 opacity-55">
 
       </div>
-        <footer className="relative z-30 w-full py-12 px-6 md:px-8 text-white">
+        <footer className="relative z-30 w-full pt-20 pb-10 px-6 md:px-8 text-white">
             <div className="absolute bottom-[-120px] right-[-100px] w-[400px] h-[400px] rounded-full 
                                     bg-linear-to-l from-white/40 to-transparent blur-3xl opacity-70"></div>
                     <div className="absolute bottom-[-120px] left-[-100px] w-[400px] h-[400px] rounded-full 
