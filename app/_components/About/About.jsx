@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import React from 'react'
 import LetsTalkButton from '../LetsTalkButton'
+import ArrowRightCircle from '../ArrowRightCircle'
 
 function About() {
   return <>
@@ -20,7 +21,12 @@ function About() {
         </div>
 
         <div className="hidden md:block">
-          <LetsTalkButton />
+              <button className="flex w-[248px] h-[72px] font-[Salmond-medium] cursor-pointer justify-between items-center bg-transparent text-[#002733] pl-6 pr-2 rounded-full hover:bg-gray-100 transition shadow-lg">
+              <span>Let&apos;s Talk</span>
+              <span>
+                <ArrowRightCircle />
+              </span>
+            </button>
         </div>
       </div>
 
@@ -29,7 +35,7 @@ function About() {
         <h3 className="text-[#002733] leading-12 text-3xl md:text-3xl font-bold mb-6">
           We are <span className="text-[#0FC421]">farapi</span>, a cutting edge company that delivers
         </h3>
-        <p className="text-[#002733] font-bold leading-relaxed mb-6 md:mb-0">
+        <p className="text-[#002733] leading-relaxed mb-6 md:mb-0">
           We are a team of young Egyptian entrepreneurs aiming to become the next tech giant in the MENA region and globally. Established in 2023, our goal is to be a hub for Egypt's top tech talents.
         </p>
         <div className="block md:hidden mt-6">

@@ -11,7 +11,6 @@ import ReactImg from "../../../public/Images/reactjs.png";
 import next from "../../../public/Images/next.png";
 import django from "../../../public/Images/django.png";
 import fastApi from "../../../public/Images/fastapi.png";
-import figma from "../../../public/Images/figma.png";
 import wordpress from "../../../public/Images/wordPress.png";
 import Image from "next/image";
 
@@ -22,7 +21,6 @@ export default function AboutSlider() {
     { img: next, alt: "NextImg" },
     { img: django, alt: "DjangoImg" },
     { img: fastApi, alt: "FastApiImg" },
-    { img: figma, alt: "FigmaImg" },
     { img: wordpress, alt: "WordpressImg" },
   ];
 

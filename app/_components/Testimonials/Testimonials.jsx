@@ -63,9 +63,9 @@ function Testimonials() {
     }
 
   return <>
-        <div className="relative section-background">
-      <div className="overlay absolute inset-0  bg-[#002733] opacity-80"></div>
-      <div className="asfalt-overlay z-10 opacity-55"></div>
+        <div className="relative bg-[#002733]">
+      <div className="overlay absolute inset-0 asfalt-overlay"></div>
+      <div className="section-background z-10 opacity-55"></div>
                   <section className='z-20 relative p-6 md:p-10 lg:px-30 lg:py-[104px]'>
                   <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-[-120px] right-[-100px] w-[400px] h-[400px] rounded-full 

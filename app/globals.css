@@ -38,32 +38,39 @@
   transition-timing-function: linear !important;
 }
 
-.section-background {
-  background-image: url('../public/Images/hero-bg.jpg');
+.asfalt-overlay {
+  background-image: url('../public/Images/pattern\ \(1\).png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
-.asfalt-overlay {
+.section-background{
   position: absolute;
   inset: 0;
-  /* background-color: #002733; */
-  background-image: url(https://www.transparenttextures.com/patterns/asfalt-light.png);
-  /* opacity: 0.8; */
+  background-image: url('../public/Images/texture.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   z-index: 0;
 }
-.white-overlay {
+/* .lighting-circle-bottom {
+  background-image: url('../public/Images/lighting\ -\ bottom\ left.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* .white-overlay {
   position: absolute;
   inset: 0;
   background-color: #F5F4EE;
   opacity: 0.93;
   z-index: 10;
-}
+} */
 
 .background {
-  background-image: url('../public/Images/hero-bg.jpg');
+  background-image: url('../public/Images/White\ Bg-\ pattern\ \(1\).png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

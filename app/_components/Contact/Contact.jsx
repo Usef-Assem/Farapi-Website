@@ -9,8 +9,8 @@ import EmailIcon from '../EmailIcon'
 function Contact() {
   return (
     <>
-    <div className='section-background relative'>
-        <div className="white-overlay"></div>
+    <div className='background relative'>
+        {/* <div className="white-overlay"></div> */}
       <section className="py-12 md:py-16 lg:py-[104px] px-6 md:px-8 lg:px-6 z-20 relative">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left Side - Text Content */}
@@ -42,9 +42,9 @@ function Contact() {
             </div>
 
             {/* Let's Talk Button */}
-            <button className="flex w-[200px] cursor-pointer mt-8 md:mt-10 justify-between items-center bg-white px-2 py-1 rounded-full hover:bg-gray-100 transition">
+            <button className="flex w-[248px] h-[72px] pl-6 pr-2 cursor-pointer mt-8 md:mt-10 justify-between items-center bg-[#FBFBFA] border border-[#DADADA] rounded-full hover:bg-gray-100 transition">
               <span className='font-[Salmond-medium] text-lg text-[#002733] mt-1'>Let&apos;s Talk</span>
-                <div className="w-10 h-10 bg-[#002733] rounded-full flex items-center justify-center transition-all duration-300">
+                <div className="w-14 h-14 bg-[#002733] rounded-full flex items-center justify-center transition-all duration-300">
                     <ArrowRight className="w-5 h-5 text-white" />
                 </div>
             </button>

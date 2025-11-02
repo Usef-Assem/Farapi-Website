@@ -12,9 +12,9 @@ function Footer() {
   return (
     <>
     <div className='bg-[#E6E6E6]'>
-      <div className="relative flex justify-center section-background overflow-hidden rounded-t-[50px]">
-      <div className="overlay absolute inset-0  bg-[#002733] opacity-80"></div>
-      <div className="asfalt-overlay z-10 opacity-55">
+      <div className="relative flex justify-center bg-[#002733]  overflow-hidden rounded-t-[50px]">
+      <div className="overlay absolute inset-0 asfalt-overlay"></div>
+      <div className="section-background z-10 opacity-55">
 
       </div>
         <footer className="relative z-30 w-full pt-20 pb-10 px-6 md:px-8 text-white">
@@ -26,8 +26,8 @@ function Footer() {
             
             {/* ---------- Left Column (4 cols) ---------- */}
             <div className="col-span-1 lg:col-span-4 border-b lg:border-b-0 lg:border-r border-[#FFFFFF80] pb-8 lg:pb-0 flex flex-col gap-5">
-              <div className="logo w-32">
-                <Image src={Logo} width={200} height={200} alt="Farapi" className="object-contain" />
+              <div className="logo w-[145px] h-[63px]">
+                <Image src={Logo} alt="Farapi" className="object-contain" />
               </div>
 
               <p className="text-[#FFFFFFCC] w-70 font-[Salmond-Regular] text-lg leading-relaxed">

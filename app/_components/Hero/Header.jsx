@@ -6,15 +6,17 @@ import LetsTalkButton from "../LetsTalkButton";
 
 export default function Header() {
   return (
-    <div className="relative min-h-screen section-background overflow-hidden">
-      <div className="overlay absolute inset-0  bg-[#002733] opacity-80"></div>
-      <div className="asfalt-overlay z-10 opacity-55"></div>
-      <div className="absolute z-20 top-[-200] right-[-270] w-[493px] h-[370px] rounded-full 
-            bg-[#11F2BE4D] blur-[90px] pointer-events-none">
+    <div className="relative min-h-screen bg-[#002733] overflow-hidden">
+      <div className="absolute inset-0 asfalt-overlay"></div>
+      <div className="section-background z-10 opacity-65"></div>
+      <div className="absolute z-20 top-0 right-0">
+            <Image src="/Images/lighting top right.svg" width={500} height={500} alt="light-bg" />
       </div>
-        <div className="absolute z-20 top-[400] left-[-490] w-[665px] h-[665px] rounded-full 
-            md:bg-[#69FF8c] bg-[#4AB285] md:blur-[209px] blur-[100px] opacity-90 md:opacity-100 pointer-events-none">
-        </div>
+<div
+  className="absolute bottom-0 left-0 z-20 bg-no-repeat bg-cover">
+              <Image src="/Images/lighting bottom left.svg" width={700} height={400} alt="light-bg" />
+</div>
+
 <div
   className="absolute z-5 w-[785px] h-[785px] rounded-full
              bg-[#5aaef8] opacity-70
@@ -28,18 +30,18 @@ export default function Header() {
 
 
       <section className="absolute mt-20 md:mt-30 inset-0 z-20 px-6 md:px-12 lg:px-20 pt-16 pb-20 md:pt-24 md:pb-32 flex flex-col justify-center">
-        <div className="max-w-7xl font-[Salmond-medium]">
-          <h1 className="text-white text-[38px] md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-            Innovation In Every
-            <br />
-            Line Of Custom Code
+        <div className="font-[Salmond-medium]">
+          <h1 className="text-white text-[38px] lg:w-5xl md:text-6xl lg:text-[88px] font-[Salmond-semibold] leading-[140%]">
+            Innovation In Every Line Of Custom Code
           </h1>
-
-          <div className="flex flex-col md:flex-col lg:flex-row justify-between items-start lg:items-center w-full gap-6 lg:gap-0">
-            <p className="text-[#FCFCFC] text-base md:text-lg mb-0 lg:mb-10">
+            
+          <div className="flex flex-col md:flex-col mt-5 lg:flex-row justify-between items-start lg:items-center w-full gap-6 lg:gap-0">
+            <p className="text-[#FCFCFC] font-[Salmond-medium] text-base md:text-[20px] mb-0 ">
               Experience the difference with our custom software solutions.
             </p>
+            <div className="">
             <LetsTalkButton />
+            </div>
           </div>
         </div>
 
@@ -48,11 +50,11 @@ export default function Header() {
           <div>
             <div className="flex items-center gap-2">
               <div className="flex -space-x-5">
-                <div className="w-10 h-10 rounded-full person-1 border-2 border-teal-900"></div>
-                <div className="w-10 h-10 rounded-full person-2 border-2 border-teal-900"></div>
-                <div className="w-10 h-10 rounded-full person-3 border-2 border-teal-900"></div>
+                <div className="w-16 h-16 rounded-full person-1 border-2 border-teal-900"></div>
+                <div className="w-16 h-16 rounded-full person-2 border-2 border-teal-900"></div>
+                <div className="w-16 h-16 rounded-full person-3 border-2 border-teal-900"></div>
               </div>
-              <p className="text-white font-[Salmond - News] text-[20px]">
+              <p className="text-white font-[Salmond-news] text-[20px]">
                 500K+ People already trusted us.
               </p>
             </div>
@@ -63,21 +65,21 @@ export default function Header() {
               <p className="text-[#F4F0EC] text-[20px] md:text-[22px] mb-2">
                 Clicks
               </p>
-              <p className="text-[#F4F0EC] text-2xl md:text-4xl">1M+</p>
+              <p className="text-[#F4F0EC] text-2xl md:text-5xl">1M+</p>
             </div>
 
             <div>
               <p className="text-[#F4F0EC] text-[20px] md:text-[22px] mb-2">
                 Clients
               </p>
-              <p className="text-[#F4F0EC] text-2xl md:text-4xl">7</p>
+              <p className="text-[#F4F0EC] text-2xl md:text-5xl">7</p>
             </div>
 
             <div>
               <p className="text-[#F4F0EC] text-[20px] md:text-[22px] mb-2">
                 Our Possibilities
               </p>
-              <p className="text-[#F4F0EC] font-[Salmond-semibold] text-2xl md:text-4xl">∞</p>
+              <p className="text-[#F4F0EC] text-2xl md:text-5xl font-[Salmond-semibold]">∞</p>
             </div>
           </div>
         </div>
