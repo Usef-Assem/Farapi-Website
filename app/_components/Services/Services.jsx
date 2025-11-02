@@ -34,7 +34,7 @@ function Services() {
         </div>
           <div className="mx-auto ">
             {/* Header */}
-            <div className="flex flex-col md:flex-row justify-between  w-full items-start md:items-center mb-12 gap-6 md:gap-0">
+            <div className="flex flex-col md:flex-row justify-between w-full items-start md:items-center mb-12 gap-6 md:gap-0">
               <div>
                 <p className="text-white text-[18px] mb-2 font-[Salmond-medium] tracking-wide">
                   Services
@@ -52,7 +52,7 @@ function Services() {
             </div>
 
             {/* Service Cards */}
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center mb-16">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:grid-cols-3 justify-items-center mb-16">
     {servicesData.map((service, index) => (
       <div key={index} className="relative mt-10 w-full max-w-[400px] lg:max-w-[421px] h-[330px]">
         <div

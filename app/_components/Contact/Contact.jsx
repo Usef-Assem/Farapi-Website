@@ -12,10 +12,10 @@ function Contact() {
     <div className='background relative'>
         {/* <div className="white-overlay"></div> */}
       <section className="py-12 md:py-16 lg:py-[104px] px-6 md:px-8 lg:px-6 z-20 relative">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 md:gap-10 items-start">
           {/* Left Side - Text Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl lg:text-5xl font-[Salmond-semibold] text-[#002733] leading-tight">
+            <h2 className="text-4xl md:text-4xl lg:text-5xl font-[Salmond-semibold] text-[#002733] leading-tight">
               Let&apos;s Work <br />
               <span className="text-[#0FC421]">Together</span> On Your <br />
               Next Project
