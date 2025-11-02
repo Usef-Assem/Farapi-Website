@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import AboutSlider from "../About/AboutSlider";
+import Image from "next/image";
 
 function Services() {
   const servicesData = [
@@ -80,6 +81,7 @@ function Services() {
 
             {/* Technology Logos Slider */}
               <AboutSlider />
+
           </div>
         </section>
       </div>

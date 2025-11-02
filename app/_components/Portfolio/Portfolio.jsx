@@ -56,7 +56,7 @@ function Portfolio() {
           </h2>
         </div>
 
-        <div className="text-left font-[Salmond-medium] md:text-left text-[#002733]  transition-all duration-500 w-full md:w-1/2 lg:w-[32%]">
+        <div className="text-left font-[Salmond-medium] md:text-left text-[#002733]  transition-all duration-500 w-full md:w-1/2 lg:w-[40%]">
           <div className='w-full'>
           <h4 className="text-[22px] md:text-xl text-start lg:text-start leading-[160%]">
             {slides[currentSlide].title}
