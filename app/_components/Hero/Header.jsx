@@ -14,7 +14,7 @@ export default function Header() {
       </div>
 <div
   className="absolute bottom-0 left-0 z-20 bg-no-repeat bg-cover">
-              <Image src="/Images/lighting bottom left.svg" width={700} height={400} alt="light-bg" />
+              <Image src="/Images/hero-colours (1).png" width={700} height={400} alt="light-bg" />
 </div>
 
 <div
@@ -31,7 +31,7 @@ export default function Header() {
 
       <section className="absolute mt-20 md:mt-30 inset-0 z-20 px-6 md:px-12 lg:px-20 pt-16 pb-20 md:pt-24 md:pb-32 flex flex-col justify-center">
         <div className="font-[Salmond-medium]">
-          <h1 className="text-white text-[38px] lg:w-5xl md:text-6xl lg:text-[88px] font-[Salmond-semibold] leading-[140%]">
+          <h1 className="text-white text-[34px] lg:w-5xl md:text-6xl lg:text-[88px] font-[Salmond-semibold] leading-[140%]">
             Innovation In Every Line Of Custom Code
           </h1>
             
@@ -54,7 +54,7 @@ export default function Header() {
                 <div className="w-16 h-16 rounded-full person-2 border-2 border-teal-900"></div>
                 <div className="w-16 h-16 rounded-full person-3 border-2 border-teal-900"></div>
               </div>
-              <p className="text-white font-[Salmond-news] text-[20px]">
+              <p className="text-white font-[Salmond-news] md:text-[20px]">
                 500K+ People already trusted us.
               </p>
             </div>

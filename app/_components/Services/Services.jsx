@@ -44,7 +44,7 @@ function Services() {
                   Your Software Partner
                 </h2>
               </div>
-              <button className="flex items-center gap-4 text-xl text-[#F5F4EE] px-7 py-3 rounded-full cursor-pointer font-[Salmond-medium]">
+              <button className="flex items-center gap-4 text-xl text-[#F5F4EE] rounded-full cursor-pointer font-[Salmond-medium]">
                 All Service
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center hover:bg-green-400 transition-all duration-200">
                   <ArrowRight className="w-5 h-5 text-black" />

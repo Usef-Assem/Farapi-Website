@@ -9,12 +9,12 @@ function About() {
   <div className="white-overlay absolute inset-0 z-10"></div>
 
   <section className="px-6 md:px-12 lg:px-16 py-16 md:py-24 relative z-20 font-[Salmond-medium]">
-    <div className="grid md:grid-cols-5 gap-12 lg:gap-0 items-start mx-auto">
+    <div className="grid md:grid-cols-5 grid-cols-1 gap-12 lg:gap-0 items-start mx-auto">
       {/* Left Column */}
       <div className='h-full flex flex-col justify-between md:col-span-2'>
         <div>
         <p className="text-[#002733] text-[18px] tracking-[100%]">About</p>
-        <h2 className="text-[#002733] text-4xl md:text-[45px] font-[Salmond-semibold] mt-8">
+        <h2 className="text-[#002733] text-4xl md:text-[40px] lg:text-[45px] font-[Salmond-semibold] mt-8">
           Who we are
         </h2>
         </div>
@@ -32,7 +32,7 @@ function About() {
       {/* Right Column */}
       <div className='col-span-3  flex justify-end'>
       <div className='lg:w-[90%]'>
-        <h3 className="text-[#002733] leading-[160%] text-3xl md:text-5xl mb-6">
+        <h3 className="text-[#002733] leading-[160%] text-3xl lg:text-5xl mb-6">
           We are <span className="text-[#0FC421]">farapi</span>, a cutting edge company that delivers
         </h3>
         <p className="text-[#002733] mb-6 md:mb-0 lg:text-xl lg:leading-[160%]">

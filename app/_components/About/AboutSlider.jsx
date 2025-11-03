@@ -6,22 +6,22 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 
-import Azure from "../../../public/Images/Azure.png";
-import ReactImg from "../../../public/Images/reactjs.png";
-import next from "../../../public/Images/next.png";
-import django from "../../../public/Images/django.png";
-import fastApi from "../../../public/Images/fastapi.png";
-import wordpress from "../../../public/Images/wordPress.png";
+import Azure from "../../../public/Images/Vector.svg";
+import Wordpress from "../../../public/Images/Vector-1.svg";
+import Django from "../../../public/Images/Vector-2.svg";
+import fastApi from "../../../public/Images/Vector-3.svg";
+import Next from "../../../public/Images/Vector-4.svg";
+import ReactImg from "../../../public/Images/Vector-5.svg";
 import Image from "next/image";
 
 export default function AboutSlider() {
   const Images = [
     { img: Azure, alt: "AzureImg" },
+    { img: Wordpress, alt: "Wordpress" },
+    { img: Django, alt: "DjangoImg" },
+    { img: fastApi, alt: "fastApiImg" },
+    { img: Next, alt: "NextImg" },
     { img: ReactImg, alt: "ReactImg" },
-    { img: next, alt: "NextImg" },
-    { img: django, alt: "DjangoImg" },
-    { img: fastApi, alt: "FastApiImg" },
-    { img: wordpress, alt: "WordpressImg" },
   ];
 
   return (
