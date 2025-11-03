@@ -11,7 +11,7 @@ import Link from 'next/link'
 function Footer() {
   return (
     <>
-    <div className='bg-[#E6E6E6]'>
+    <div className='bg-[#FBFBFD]'>
       <div className="relative flex justify-center bg-[#002733]  overflow-hidden rounded-t-[50px]">
       <div className="overlay absolute inset-0 asfalt-overlay"></div>
       <div className="section-background z-10 opacity-55">

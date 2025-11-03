@@ -11,14 +11,14 @@ function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
+    { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
     { name: "Portfolio", href: "#portfolio" },
-    { name: "About", href: "#about" },
   ];
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50">
-      <div className={`flex flex-wrap items-center justify-between mx-auto p-4 md:px-12 md:bg-transparent md:backdrop-blur-none ${isOpen ? 'bg-white/10 backdrop-blur-lg' : ''}`}>
+    <nav className="absolute top-0 left-0 w-full z-50 ">
+      <div className={`flex flex-wrap items-center justify-between mx-auto p-4 md:px-10 md:bg-transparent md:backdrop-blur-none`}>
         
         {/* Logo */}
         <Link href="/" className="flex items-center">
@@ -29,10 +29,10 @@ function Navbar() {
         <div className="flex md:order-2 items-center gap-6">
           {/* Desktop Let's Talk Button */}
           <Link
-            href="/"
-            className="hidden md:flex items-center gap-2 text-white font-[Salmond-medium] hover:text-[#58F468] transition-colors"
+            href="#Contact US"
+            className="hidden md:flex items-center gap-2 text-lg text-[#F4F0EC] font-[Salmond-medium] hover:text-[#58F468] transition-colors"
           >
-            Let&apos;s Talk
+            Contact US
           </Link>
           
           <div className="hidden md:flex justify-center items-center bg-[#58F468] w-12 h-12 rounded-full cursor-pointer hover:scale-105 transition-transform">
@@ -68,18 +68,19 @@ function Navbar() {
 
         {/* Navigation Links */}
         <div
-          className={`items-center justify-between ${
+          className={`items-center justify-between md:bg-[#E9EAE51F] rounded-full w-full md:w-[370px] lg:w-[520px] h-[72px] ${
             isOpen ? "block" : "hidden"
-          } w-full md:flex md:w-auto md:order-1`}
+          } md:flex`}
           id="navbar-menu"
         >
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg bg-white/10 backdrop-blur-lg md:space-x-8 md:flex-row md:mt-0 md:bg-transparent md:backdrop-blur-none border border-white/20 md:border-0">
+          <ul className="flex flex-col font-medium text-lg p-3 lg:pl-2 lg:pr-6 w-full mt-4 rounded-lg backdrop-blur-lg bg-[#E9EAE51F] md:bg-transparent md:flex-row items-center md:justify-between
+           md:mt-0 md:backdrop-blur-none border border-white/20 md:border-0">
             {navLinks.map((link, index) => (
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className={`block py-2 px-3 md:p-0 md:hover:text-[#58F468] transition-colors ${
-                    index === 0 ? "text-[#58F468] font-[Salmond-semibold]" : "text-white font-[Salmond-medium]"
+                  className={`block py-2 px-3 lg:p-0 md:hover:text-[#58F468] transition-colors ${
+                    index === 0 ? "md:text-[#002733] text-white lg:w-[120] lg:h-[56] flex justify-center items-center font-[Salmond-semibold] md:bg-[#F4F0EC] rounded-full" : "text-white font-[Salmond-medium]"
                   }`}
                   aria-current={index === 0 ? "page" : undefined}
                   onClick={() => setIsOpen(false)}
@@ -91,17 +92,17 @@ function Navbar() {
 
             {/* Mobile Let's Talk Button */}
             <li className="md:hidden mt-2">
-              <button
-                className="w-full flex items-center justify-center gap-2 bg-white px-4 py-2 rounded-full hover:bg-[#58F468] transition-all duration-300 group"
+              <Link href={'#Contact US'}
+                className="w-full flex items-center justify-center gap-2 bg-white pl-4 pr-2 py-2 rounded-full hover:bg-[#58F468] transition-all duration-300 group"
                 onClick={() => setIsOpen(false)}
               >
                 <span className="font-[Salmond-medium] text-[15px] text-[#002733]">
-                  Let&apos;s Talk
+                  Contact US
                 </span>
                 <div className="w-8 h-8 bg-[#58F468] rounded-full flex items-center justify-center group-hover:bg-white transition-all duration-300">
                   <ArrowRight className="w-4 h-4 text-[#002733] group-hover:text-[#002733]" />
                 </div>
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

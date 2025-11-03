@@ -2,6 +2,10 @@
 @import 'slick-carousel/slick/slick.css';
 @import 'slick-carousel/slick/slick-theme.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Salmond";
   src: url("/fonts/salmond.light.ttf") format("truetype");
