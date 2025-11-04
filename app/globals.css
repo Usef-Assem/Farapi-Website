@@ -58,20 +58,6 @@ html {
   background-position: center;
   z-index: 0;
 }
-/* .lighting-circle-bottom {
-  background-image: url('../public/Images/lighting\ -\ bottom\ left.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
-/* .white-overlay {
-  position: absolute;
-  inset: 0;
-  background-color: #F5F4EE;
-  opacity: 0.93;
-  z-index: 10;
-} */
 
 .background {
   background-image: url('../public/Images/White\ Bg-\ pattern\ \(1\).png');
@@ -95,7 +81,6 @@ html {
   filter: blur(220px);  /* softness of the glow */
   opacity: 1;
   z-index: 15;           /* above overlay but below content */
-  pointer-events: none; /* prevent mouse interaction */
 }
 
 .light-circle-bottom {
@@ -115,7 +100,6 @@ html {
   transform: rotate(-100.16deg);
   opacity: 1;
   z-index: 15;
-  pointer-events: none;
 }
 
 .person-1 {

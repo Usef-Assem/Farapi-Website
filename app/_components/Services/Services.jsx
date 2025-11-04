@@ -9,59 +9,59 @@ const sliderRef = useRef(null)
 
   const servicesData = [
     {
-      title: "UX Design",
+      title: "UI/UX Design",
       description:
-        "UX Design services with focus on creating intuitive user experiences.",
+        "Designing intuitive, user centered interfaces that look stunning and feel effortless to use.",
     },
     {
-      title: "Android Apps",
+      title: "iOS & Android Apps",
       description:
-        "Custom Android apps built to meet specific goals and user needs.",
+        "Building fast, reliable mobile apps that deliver seamless experiences and real world impact.",
     },
     {
-      title: "iOS Apps",
+      title: "Web Platforms",
       description:
-        "High quality iOS applications that provide seamless user experiences.",
+        "Building custom web platforms that connect, engage, and scale seamlessly to drive growth.",
     },
     {
-      title: "UX Design",
+      title: "UI/UX Design",
       description:
-        "UX Design services with focus on creating intuitive user experiences.",
+        "Designing intuitive, user centered interfaces that look stunning and feel effortless to use.",
     },
     {
-      title: "Android Apps",
+      title: "iOS & Android Apps",
       description:
-        "Custom Android apps built to meet specific goals and user needs.",
+        "Building fast, reliable mobile apps that deliver seamless experiences and real world impact.",
     },
     {
-      title: "iOS Apps",
+      title: "Web Platforms",
       description:
-        "High quality iOS applications that provide seamless user experiences.",
+        "Building custom web platforms that connect, engage, and scale seamlessly to drive growth.",
     },
     {
-      title: "UX Design",
+      title: "UI/UX Design",
       description:
-        "UX Design services with focus on creating intuitive user experiences.",
+        "Designing intuitive, user centered interfaces that look stunning and feel effortless to use.",
     },
     {
-      title: "Android Apps",
+      title: "iOS & Android Apps",
       description:
-        "Custom Android apps built to meet specific goals and user needs.",
+        "Building fast, reliable mobile apps that deliver seamless experiences and real world impact.",
     },
     {
-      title: "iOS Apps",
+      title: "Web Platforms",
       description:
-        "High quality iOS applications that provide seamless user experiences.",
+        "Building custom web platforms that connect, engage, and scale seamlessly to drive growth.",
     },
     {
-      title: "UX Design",
+      title: "iOS & Android Apps",
       description:
-        "UX Design services with focus on creating intuitive user experiences.",
+        "Building fast, reliable mobile apps that deliver seamless experiences and real world impact.",
     },
     {
-      title: "Android Apps",
+      title: "Web Platforms",
       description:
-        "Custom Android apps built to meet specific goals and user needs.",
+        "Building custom web platforms that connect, engage, and scale seamlessly to drive growth.",
     },
   ];
 
@@ -95,7 +95,7 @@ const sliderRef = useRef(null)
                 </h2>
               </div>
               <button onClick={handleNext} className="flex items-center gap-4 text-xl text-[#F5F4EE] rounded-full cursor-pointer font-[Salmond-medium]">
-                All Service
+                view more
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center hover:bg-green-400 transition-all duration-200">
                   <ArrowRight className="w-5 h-5 text-black" />
                 </div>

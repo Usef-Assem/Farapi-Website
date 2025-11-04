@@ -3,42 +3,45 @@ import React, { useState } from 'react'
 import PortfolioSlider from './PortfolioSlider'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import dynamic from 'next/dynamic'
-import project1 from '../../../public/Images/Aklni.png'
-import project2 from '../../../public/Images/eyedias.png'
-import project3 from '../../../public/Images/tiba.png'
+import project1 from '../../../public/Images/Aklne (1).png'
+import project2 from '../../../public/Images/eyedias (1).png'
+import project3 from '../../../public/Images/gridkey (1).png'
+import project4 from '../../../public/Images/Instagold (1).png'
+import project5 from '../../../public/Images/noa (1).png'
+import project6 from '../../../public/Images/Seen (1).png'
 
 
 function Portfolio() {
   const slides = [
     {
       img: project1,
-      title: "Aklni Website",
-      subtitle: "Food Website",
+      title: "Aklne App",
+      subtitle: "Smart app for daily meal choices.",
     },
     {
       img: project2,
       title: "Eyedias Website",
-      subtitle: "The First Co-creation in The MENA Region",
+      subtitle: "Connecting creatives with businesses",
     },
     {
       img: project3,
-      title: "Tiba Medical App",
-      subtitle: "Modern Interface for Healthcare",
+      title: "gridkey",
+      subtitle: "Financial asset management platform",
     },
     {
-      img: project1,
-      title: "Aklni Website",
-      subtitle: "Food Website",
+      img: project4,
+      title: "Instagold",
+      subtitle: "Fintech for gold tracking",
     },
     {
-      img: project2,
-      title: "Eyedias Website",
-      subtitle: "The First Co-creation in The MENA Region",
+      img: project5,
+      title: "noa",
+      subtitle: "IoT Fleet Management System",
     },
     {
-      img: project3,
-      title: "Tiba Medical App",
-      subtitle: "Modern Interface for Healthcare",
+      img: project6,
+      title: "Seen",
+      subtitle: "An app for mental health support",
     },
  
   ]

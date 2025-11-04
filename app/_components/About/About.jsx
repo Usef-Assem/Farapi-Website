@@ -2,6 +2,7 @@ import { ArrowRight } from 'lucide-react'
 import React from 'react'
 import LetsTalkButton from '../LetsTalkButton'
 import ArrowRightCircle from '../ArrowRightCircle'
+import Link from 'next/link'
 
 function About() {
   return <>
@@ -20,12 +21,7 @@ function About() {
         </div>
 
         <div className="hidden md:block">
-            <button className="flex w-[248px] h-[72px] pl-6 pr-2 cursor-pointer mt-8 md:mt-10 justify-between items-center bg-[#FBFBFA] border border-[#DADADA] rounded-full hover:bg-gray-100 transition">
-              <span className='font-[Salmond-medium] text-lg text-[#002733] mt-1'>Let&apos;s Talk</span>
-                <div className="w-14 h-14 bg-[#58F468] rounded-full flex items-center justify-center transition-all duration-300">
-                    <ArrowRight className="w-5 h-5" />
-                </div>
-            </button>
+          <LetsTalkButton bgColor={'#FBFBFA'}/>
         </div>
       </div>
 
@@ -33,18 +29,12 @@ function About() {
       <div className='col-span-3  flex justify-end'>
       <div className='lg:w-[90%]'>
         <h3 className="text-[#002733] leading-[160%] text-3xl lg:text-5xl mb-6">
-          We are <span className="text-[#0FC421]">farapi</span>, a cutting edge company that delivers
+          Your Reliable <span className='text-[#0FC421]'>Tech Arm</span>, Building Solutions That Last.
         </h3>
-        <p className="text-[#002733] mb-6 md:mb-0 lg:text-xl lg:leading-[160%]">
-          We are a team of young Egyptian entrepreneurs aiming to become the <br /> next tech giant in the MENA region and globally. Established in 2023, our <br /> goal is to be a hub for Egypt's top tech talents.
-        </p>
+        <p className="text-[#002733] md:w-[90%] mb-6 md:mb-0 lg:text-xl lg:leading-[160%]">
+          Delivering smart, reliable solutions powered by diverse expertise. We build technology that drives growth, enhances performance, and creates lasting impact.        </p>
         <div className="block md:hidden mt-6">
-            <button className="flex w-[248px] h-[72px] pl-6 pr-2 cursor-pointer mt-8 md:mt-10 justify-between items-center bg-[#FBFBFA] border border-[#DADADA] rounded-full hover:bg-gray-100 transition">
-              <span className='font-[Salmond-medium] text-lg text-[#002733] mt-1'>Let&apos;s Talk</span>
-                <div className="w-14 h-14 bg-[#58F468] rounded-full flex items-center justify-center transition-all duration-300">
-                    <ArrowRight className="w-5 h-5" />
-                </div>
-            </button>
+          <LetsTalkButton bgColor={'#FBFBFA'}/>
         </div>
       </div>
       </div>

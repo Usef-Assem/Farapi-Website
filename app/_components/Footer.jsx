@@ -30,35 +30,35 @@ function Footer() {
                 <Image src={Logo} alt="Farapi" className="object-contain" />
               </div>
 
-              <p className="text-[#FFFFFFCC] w-70 font-[Salmond-Regular] text-lg leading-relaxed">
-                Learn to love growth and change <br /> in improving your skills and you will be successful in the future.
+              <p className="text-[#FFFFFFCC] w-70 font-[Salmond-Regular] text-lg leading-7">
+                Building meaningful technology that empowers growth.             
               </p>
 
-              <LetsTalkButton />
+              <LetsTalkButton bgColor={'#F4F0EC'}/>
             </div>
 
             {/* ---------- Right Columns (8 cols) ---------- */}
-            <div className="col-span-1 lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+            <div className="col-span-1 lg:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10">
               
               {/* Farapi Column */}
               <div>
                 <h4 className="font-[Salmond-medium] text-lg mb-4">Farapi</h4>
-                <ul className="space-y-3 font-[Salmond] text-sm">
-                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular text-lg hover:text-[#58F468] transition-colors">Home</a></li>
-                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular text-lg hover:text-[#58F468] transition-colors">About</a></li>
-                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular text-lg hover:text-[#58F468] transition-colors">Services</a></li>
-                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular text-lg hover:text-[#58F468] transition-colors">Portfolio</a></li>
+                <ul className="space-y-3 font-[Salmond] text-[16px] md:text-lg">
+                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Home</a></li>
+                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">About</a></li>
+                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Services</a></li>
+                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Portfolio</a></li>
                 </ul>
               </div>
 
               {/* Help Center Column */}
               <div>
                 <h4 className="font-[Salmond-medium] text-lg mb-4">Help Center</h4>
-                <ul className="space-y-3 font-[Salmond] text-sm">
-                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular text-lg hover:text-[#58F468] transition-colors">Contact Us</a></li>
-                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular text-lg hover:text-[#58F468] transition-colors">Terms & Conditions</a></li>
-                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular text-lg hover:text-[#58F468] transition-colors">Cookie Setting</a></li>
-                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular text-lg hover:text-[#58F468] transition-colors">Privacy Policy</a></li>
+                <ul className="space-y-3 font-[Salmond] text-[16px] md:text-lg">
+                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Contact Us</a></li>
+                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Terms & Conditions</a></li>
+                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Cookie Setting</a></li>
+                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Privacy Policy</a></li>
                 </ul>
               </div>
 
@@ -79,15 +79,16 @@ function Footer() {
       <FontAwesomeIcon icon={faLinkedinIn} className="w-7 h-7" />
     </a>
   </div>
-  <p className="text-[#FFFFFFCC] lg:text-end lg:me-4 font-[Salmond-medium] text-lg">
+  <p className="text-[#FFFFFFCC] lg:text-end lg:me-4 font-[Salmond-medium] md:text-lg text-base">
     <a href="mailto:contact@farapi.ai" className="hover:text-[#58F468] transition-colors">contact@farapi.ai</a>
   </p>
 </div>
 
             </div>
           </div>
-          <div className="copyRight mt-8 lg:mt-5">
-            <p className='text-center text-sm md:text-base text-[#FFFFFFCC] font-[Salmond-medium]'>Copyright © 2024 Farapi all rights reserved. <Link className='text-[#58F468] hover:underline' href={'/'}>Terms & Privacy Policy</Link></p>
+          <div className="copyRight mt-8 ms-5 md:ms-0 lg:mt-5 md:flex md:justify-center md:items-center md:gap-[18px]">
+            <p className='text-sm md:text-base text-[#FFFFFFCC] font-[Salmond-medium]'>Copyright © 2024 Farapi all rights reserved.</p>
+             <Link className='text-[#58F468] hover:underline text-center' href={'/'}>Terms & Privacy Policy</Link>
           </div>
         </footer>
       </div>

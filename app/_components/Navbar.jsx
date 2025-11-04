@@ -29,7 +29,8 @@ function Navbar() {
         <div className="flex md:order-2 items-center gap-6">
           {/* Desktop Let's Talk Button */}
           <Link
-            href="#Contact US"
+            href="https://calendly.com/omar-farapi/30min"
+            target="_blank"
             className="hidden md:flex items-center gap-2 text-lg text-[#F4F0EC] font-[Salmond-medium] hover:text-[#58F468] transition-colors"
           >
             Contact US
@@ -92,7 +93,8 @@ function Navbar() {
 
             {/* Mobile Let's Talk Button */}
             <li className="md:hidden mt-2">
-              <Link href={'#Contact US'}
+              <Link href={'https://calendly.com/omar-farapi/30min'}
+                target="_blank"
                 className="w-full flex items-center justify-center gap-2 bg-white pl-4 pr-2 py-2 rounded-full hover:bg-[#58F468] transition-all duration-300 group"
                 onClick={() => setIsOpen(false)}
               >

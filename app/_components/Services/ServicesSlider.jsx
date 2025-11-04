@@ -42,7 +42,7 @@ function ServicesSlider({servicesData , sliderRef}) {
                         <h3 className="md:text-3xl text-2xl font-[Salmond-medium] mb-4 transition-colors duration-300 group-hover:text-[#58F468]">
                           {service.title}
                         </h3>
-                        <p className="md:text-xl text-lg lg:w-75 mb-24 leading-[140%] font-[Salmond-news] text-[#F5F4EE]">
+                        <p className="md:text-xl text-lg mb-24 leading-[140%] font-[Salmond-news] text-[#F5F4EE]">
                           {service.description}
                         </p>
                       </div>
