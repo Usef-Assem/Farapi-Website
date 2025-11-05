@@ -87,8 +87,8 @@ function Footer() {
             </div>
           </div>
           <div className="copyRight mt-8 ms-5 md:ms-0 lg:mt-5 md:flex md:justify-center md:items-center md:gap-[18px]">
-            <p className='text-sm md:text-base text-[#FFFFFFCC] font-[Salmond-medium]'>Copyright © 2024 Farapi all rights reserved.</p>
-             <Link className='text-[#58F468] hover:underline text-center' href={'/'}>Terms & Privacy Policy</Link>
+            <p className='text-sm md:text-base text-[#FFFFFFCC] font-[Salmond-medium]'>Copyright © 2025 Farapi all rights reserved.</p>
+             <Link className='text-[#58F468] mb-[5px] text-center' href={'/'}>Terms & Privacy Policy</Link>
           </div>
         </footer>
       </div>

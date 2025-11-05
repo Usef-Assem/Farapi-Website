@@ -37,13 +37,13 @@ function Contact() {
                 <EmailIcon />
                 <div>
                   <h4 className="text-lg text-[#1a1a1a]">Email</h4>
-                  <p className="text-[#1a1a1a] mt-1">anarqi@gmail.com</p>
+                  <p className="text-[#1a1a1a] mt-1">contact@farapi.ai</p>
                 </div>
               </div>
             </div>
 
             {/* Let's Talk Button */}
-              <LetsTalkButton bgColor={'#FBFBFA'} ArrowBgColor={'#002733'} ArrowColor = {'white'} />
+              <LetsTalkButton border={true} bgColor={'#FBFBFA'} ArrowBgColor={'#002733'} ArrowColor = {'white'} />
           </div>
 
           {/* Right Side - Contact Form */}
@@ -75,13 +75,13 @@ function Contact() {
                 className="w-full px-4 py-3 lg:w-[488px] lg:h-48 border-[#E3E7ED] border rounded-lg font-[Salmond-medium] text-[#1a1a1a] placeholder:#7C7C7C focus:outline-none focus:ring-2 focus:ring-[#58F468] resize-none"
               ></textarea>
 
-              <div className="flex items-start gap-3">
+              <div className="flex items-center gap-3">
                 <input
                   type="checkbox"
                   id="terms"
-                  className="mt-1 w-4 h-4 accent-[#58F468] cursor-pointer"
+                  className=" w-4 h-4 accent-[#58F468] cursor-pointer"
                 />
-                <label htmlFor="terms" className="text-lg leading-[26px] mt-1 font-[Salmond-news] text-[#7C7C7C]">
+                <label htmlFor="terms" className="text-lg leading-[26px] mt-[5px] font-[Salmond-news] text-[#7C7C7C]">
                   I agree to the terms and privacy policy.
                 </label>
               </div>

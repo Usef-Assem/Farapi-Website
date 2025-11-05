@@ -73,7 +73,7 @@ export default function TestimonialsSlider({ feedbacks, sliderRef }) {
                 <div className="mt-6">
                   <div className="flex gap-1 mb-3">
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <span key={i} className={`text-2xl ${i < feedback.Rate ? 'text-[#58F468]' : 'star-empty'}`}>
+                      <span key={i} className={`text-2xl ${i < feedback.Rate ? 'text-[#FFC700]' : 'star-empty'}`}>
                         ★
                       </span>
                     ))}

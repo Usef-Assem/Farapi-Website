@@ -21,7 +21,7 @@ function About() {
         </div>
 
         <div className="hidden md:block">
-          <LetsTalkButton bgColor={'#FBFBFA'}/>
+          <LetsTalkButton bgColor={'#FBFBFA'} border={true}/>
         </div>
       </div>
 
@@ -34,7 +34,7 @@ function About() {
         <p className="text-[#002733] md:w-[90%] mb-6 md:mb-0 lg:text-xl lg:leading-[160%]">
           Delivering smart, reliable solutions powered by diverse expertise. We build technology that drives growth, enhances performance, and creates lasting impact.        </p>
         <div className="block md:hidden mt-6">
-          <LetsTalkButton bgColor={'#FBFBFA'}/>
+          <LetsTalkButton bgColor={'#FBFBFA'} border={true} />
         </div>
       </div>
       </div>

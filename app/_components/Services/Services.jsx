@@ -8,47 +8,13 @@ function Services() {
 const sliderRef = useRef(null)
 
   const servicesData = [
+    
     {
       title: "UI/UX Design",
       description:
         "Designing intuitive, user centered interfaces that look stunning and feel effortless to use.",
     },
     {
-      title: "iOS & Android Apps",
-      description:
-        "Building fast, reliable mobile apps that deliver seamless experiences and real world impact.",
-    },
-    {
-      title: "Web Platforms",
-      description:
-        "Building custom web platforms that connect, engage, and scale seamlessly to drive growth.",
-    },
-    {
-      title: "UI/UX Design",
-      description:
-        "Designing intuitive, user centered interfaces that look stunning and feel effortless to use.",
-    },
-    {
-      title: "iOS & Android Apps",
-      description:
-        "Building fast, reliable mobile apps that deliver seamless experiences and real world impact.",
-    },
-    {
-      title: "Web Platforms",
-      description:
-        "Building custom web platforms that connect, engage, and scale seamlessly to drive growth.",
-    },
-    {
-      title: "UI/UX Design",
-      description:
-        "Designing intuitive, user centered interfaces that look stunning and feel effortless to use.",
-    },
-    {
-      title: "iOS & Android Apps",
-      description:
-        "Building fast, reliable mobile apps that deliver seamless experiences and real world impact.",
-    },
-    {
       title: "Web Platforms",
       description:
         "Building custom web platforms that connect, engage, and scale seamlessly to drive growth.",
@@ -59,9 +25,44 @@ const sliderRef = useRef(null)
         "Building fast, reliable mobile apps that deliver seamless experiences and real world impact.",
     },
     {
-      title: "Web Platforms",
+      title: "ERP Systems",
       description:
-        "Building custom web platforms that connect, engage, and scale seamlessly to drive growth.",
+        "Building integrated systems that streamline operations and boost efficiency.",
+    },
+    {
+      title: "CRM Systems",
+      description:
+        "Creating smart tools to manage relationships, track growth, and enhance customer loyalty.",
+    },
+    {
+      title: "Fintech Apps",
+      description:
+        "Crafting smart, secure fintech products that drive financial innovation.",
+    },
+    {
+      title: "IOT Solutions",
+      description:
+        "Connecting devices and data to create smarter, more efficient systems.",
+    },
+    {
+      title: "Payment integratians",
+      description:
+        "Creating reliable, user friendly payment systems for any platform.",
+    },
+    {
+      title: "Brand Identity",
+      description:
+        "Crafting visual identities that reflect your values and stand out with purpose.",
+    },
+    {
+      title: "EdTech & LMS",
+      description:
+        "Creating smart learning platforms that empower education through technology.",
+    },
+    {
+      title: "Infra & Security",
+      description:
+        "Delivering reliable infrastructure and robust security to keep your systems running safely.",
     },
   ];
 
