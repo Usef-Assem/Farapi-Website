@@ -74,7 +74,7 @@ function PortfolioSlider({ slides, setCurrentSlide }) {
                     src={slide.img}
                     alt={slide.title}
                     fill
-                    className="rounded-2xl shadow-lg  transition-transform duration-500"
+                    className="rounded-2xl shadow-lg transition-transform duration-500"
                     priority={index === 0}
                   />
                 </div>

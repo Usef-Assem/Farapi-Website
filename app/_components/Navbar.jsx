@@ -81,7 +81,7 @@ function Navbar() {
                 <Link
                   href={link.href}
                   className={`py-2 px-3 md:hover:text-[#58F468] lg:w-[120] lg:h-[56] flex justify-center items-center transition-colors ${
-                    index === 0 ? "md:text-[#002733] text-white font-[Salmond-semibold] md:bg-[#F4F0EC] rounded-full" : "text-white ms-2 font-[Salmond-medium]"
+                    index === 0 ? "text-[#002733]  font-[Salmond-semibold] bg-[#F4F0EC] rounded-full" : "text-white lg:ms-2 md:ms-0 font-[Salmond-medium]"
                   }`}
                   aria-current={index === 0 ? "page" : undefined}
                   onClick={() => setIsOpen(false)}

@@ -31,32 +31,50 @@ function ServicesSlider({servicesData , sliderRef}) {
               className="mb-16"
             >
               {servicesData.map((service, index) => (
-                <SwiperSlide key={index}>
-                  <div className="relative mt-17 w-full max-w-[421px] h-[330px]">
-                    <div
-                      className="absolute inset-0 group bg-[#E9EAE533] border-2 border-transparent rounded-[30px] p-8 text-[#F5F4EE] 
-                                transition-all duration-300 will-change-transform origin-bottom 
-                                hover:scale-y-120 hover:bg-[#89EB934D] hover:border-[#76F483]"
-                    >
-                      <div className="transition-transform duration-300 group-hover:scale-y-[0.833]  w-full">
-                        <h3 className="md:text-3xl text-2xl font-[Salmond-medium] mb-4 transition-colors duration-300 group-hover:text-[#58F468]">
-                          {service.title}
-                        </h3>
-                        <p className="md:text-xl text-lg mb-24 leading-[140%] font-[Salmond-news] text-[#F5F4EE]">
-                          {service.description}
-                        </p>
-                      </div>
+<SwiperSlide key={index}>
+  {({ isActive }) => {
+    const activeMobile = isActive && typeof window !== 'undefined' && window.innerWidth < 1024
 
-                      <div className="transition-transform absolute bottom-4 duration-300 group-hover:scale-y-[0.833]">
-                        <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-[#58F468] group-hover:-rotate-45">
-                          <ArrowRight
-                            className="w-5 h-5 text-[#1C1B1F] transition-all duration-300"
-                          />
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
+    return (
+      <div className="relative mt-17 w-full max-w-[421px] h-[330px]">
+        <div
+          className={`absolute inset-0 group border-2 rounded-[30px] p-8 text-[#F5F4EE] transition-all duration-300 will-change-transform origin-bottom
+          ${activeMobile ? 'scale-y-120 bg-[#89EB934D] border-[#76F483]' : 'bg-[#E9EAE533] border-transparent'}
+          hover:scale-y-120 hover:bg-[#89EB934D] hover:border-[#76F483]`}
+        >
+          <div
+            className={`transition-transform duration-300 group-hover:scale-y-[0.833] w-full
+            ${activeMobile ? 'scale-y-[0.833]' : ''}`}
+          >
+            <h3
+              className={`md:text-3xl text-2xl font-[Salmond-medium] mb-4 transition-colors duration-300 group-hover:text-[#58F468]
+              ${activeMobile ? 'text-[#58F468]' : ''}`}
+            >
+              {service.title}
+            </h3>
+
+            <p className="md:text-xl text-lg mb-24 leading-[140%] font-[Salmond-news] text-[#F5F4EE]">
+              {service.description}
+            </p>
+          </div>
+
+          <div
+            className={`transition-transform absolute bottom-4 duration-300 group-hover:scale-y-[0.833]
+            ${activeMobile ? 'scale-y-[0.833]' : ''}`}
+          >
+            <button
+              className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-[#58F468] group-hover:-rotate-45
+              ${activeMobile ? 'bg-[#58F468] -rotate-45' : 'bg-white rotate-0'}`}
+            >
+              <ArrowRight className="w-5 h-5 text-[#1C1B1F] transition-all duration-300" />
+            </button>
+          </div>
+        </div>
+      </div>
+    )
+  }}
+</SwiperSlide>
+
               ))}
             </Swiper>
   )
