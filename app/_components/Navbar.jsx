@@ -74,14 +74,14 @@ function Navbar() {
           } md:flex`}
           id="navbar-menu"
         >
-          <ul className="flex flex-col font-medium text-lg p-3 lg:pl-2 lg:pr-6 w-full mt-4 rounded-lg backdrop-blur-lg bg-[#E9EAE51F] md:bg-transparent md:flex-row items-center md:justify-between
+          <ul className="flex flex-col font-medium text-lg p-3 lg:pl-2 lg:pr-8 w-full mt-4 rounded-lg backdrop-blur-lg bg-[#E9EAE51F] md:bg-transparent md:flex-row items-center md:justify-between
            md:mt-0 md:backdrop-blur-none border border-white/20 md:border-0">
             {navLinks.map((link, index) => (
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className={`py-2 px-3 md:p-0 md:hover:text-[#58F468] flex justify-center items-center transition-colors ${
-                    index === 0 ? "md:text-[#002733] text-white lg:w-[120] lg:h-[56] font-[Salmond-semibold] md:bg-[#F4F0EC] rounded-full" : "text-white font-[Salmond-medium]"
+                  className={`py-2 px-3 md:hover:text-[#58F468] lg:w-[120] lg:h-[56] flex justify-center items-center transition-colors ${
+                    index === 0 ? "md:text-[#002733] text-white font-[Salmond-semibold] md:bg-[#F4F0EC] rounded-full" : "text-white ms-2 font-[Salmond-medium]"
                   }`}
                   aria-current={index === 0 ? "page" : undefined}
                   onClick={() => setIsOpen(false)}

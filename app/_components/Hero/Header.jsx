@@ -62,21 +62,21 @@ export default function Header() {
 
           <div className="flex font-[Salmond-medium] flex-wrap justify-start md:justify-start lg:justify-between items-center gap-6 md:gap-12 lg:gap-20">
             <div>
-              <p className="text-[#F4F0EC] text-[20px] md:text-[22px] mb-2">
+              <p className="text-[#F4F0EC] text-[18px] md:text-[22px] mb-2">
                 Clicks
               </p>
               <p className="text-[#F4F0EC] text-2xl md:text-5xl mt-8">1M+</p>
             </div>
 
             <div>
-              <p className="text-[#F4F0EC] text-[20px] md:text-[22px] mb-2">
+              <p className="text-[#F4F0EC] text-[18px] md:text-[22px] mb-2">
                 Countries
               </p>
               <p className="text-[#F4F0EC] text-2xl md:text-5xl mt-8">6</p>
             </div>
 
             <div>
-              <p className="text-[#F4F0EC] text-[20px] md:text-[22px] mb-2">
+              <p className="text-[#F4F0EC] text-[18px] md:text-[22px] mb-2">
                 Our Possibilities
               </p>
               <p className="text-[#F4F0EC] text-2xl md:text-5xl font-[Salmond-semibold] mt-8">∞</p>
