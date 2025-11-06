@@ -52,7 +52,7 @@ export default function TestimonialsSlider({ feedbacks, sliderRef }) {
         >
           {feedbacks.map((feedback, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-[#E4E4E433] border border-transparent rounded-3xl p-8 text-white h-[380px] flex flex-col justify-between transition-all duration-300">
+              <div className="bg-[#E4E4E433] border border-transparent rounded-3xl p-8 text-white md:h-[380px] flex flex-col justify-between transition-all duration-300">
 
                 <div className="flex items-center gap-4">
                   <div className="relative w-[60px] h-[60px] shrink-0">
@@ -82,7 +82,7 @@ export default function TestimonialsSlider({ feedbacks, sliderRef }) {
                   <h3 className="text-2xl font-[Salmond-medium] mb-2">
                     {feedback.ReviewTitle}
                   </h3>
-                  <p className="text-base font-[Salmond - News] text-[#F5F4EE] leading-relaxed">
+                  <p className="text-base font-[Salmond-news] text-[#F5F4EE] leading-relaxed">
                     {feedback.ReviewContent}
                   </p>
                 </div>

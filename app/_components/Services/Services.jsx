@@ -75,7 +75,7 @@ const sliderRef = useRef(null)
       <div className="relative bg-[#002733]" id="services">
       <div className="overlay absolute inset-0 opacity-80 asfalt-overlay"></div>
       <div className="section-background z-10 opacity-55"></div>
-      <section className="relative px-6 md:px-12 lg:px-20 py-16 md:py-24 overflow-hidden">
+      <section className="relative px-6 md:px-12 lg:px-20 py-14 md:py-24 overflow-hidden">
         <div className="absolute top-1/2 right-[-150px] -translate-y-1/2 w-[400px] h-[400px] rounded-full 
                         bg-linear-to-l from-white/60 to-transparent blur-3xl opacity-70 pointer-events-none">
         </div>
@@ -95,9 +95,9 @@ const sliderRef = useRef(null)
                   Your Software Partner
                 </h2>
               </div>
-              <button onClick={handleNext} className="flex items-center gap-4 text-xl text-[#F5F4EE] rounded-full cursor-pointer font-[Salmond-medium]">
+              <button onClick={handleNext} className="flex items-center gap-4 md:text-xl text-base text-[#F5F4EE] rounded-full cursor-pointer font-[Salmond-medium]">
                 view more
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center hover:bg-green-400 transition-all duration-200">
+                <div className="md:w-16 md:h-16 w-14 h-14 bg-white rounded-full flex items-center justify-center hover:bg-green-400 transition-all duration-200">
                   <ArrowRight className="w-5 h-5 text-black" />
                 </div>
               </button>

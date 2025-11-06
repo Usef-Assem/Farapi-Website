@@ -49,12 +49,12 @@ function Portfolio() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   return (
-    <div className="background z-20 py-[104px] relative" id='portfolio'>
+    <div className="background z-20 md:py-[104px] py-14 relative" id='portfolio'>
       <div className="white-overlay z-10"></div>
 
       <div className="flex flex-col md:flex-row justify-between z-20 relative items-start lg:items-center px-6 md:px-8 py-6 gap-6 lg:gap-0">
         <div>
-          <h2 className="text-3xl leading-[140%] md:text-5xl font-[Salmond-semibold] lg:ms-10 mb-4 md:mb-7">
+          <h2 className="text-4xl leading-[140%] md:text-5xl font-[Salmond-semibold] lg:ms-10 mb-4 md:mb-7">
             Portfolio <br /> Highlight
           </h2>
         </div>
@@ -70,10 +70,10 @@ function Portfolio() {
           </div>
 
           <div className="slider-buttons flex mt-5 justify-start lg:justify-start">
-            <button className="prev w-16 h-16 cursor-pointer flex justify-center items-center bg-white rounded-full">
+            <button className="prev md:w-16 md:h-16 w-14 h-14 cursor-pointer flex justify-center items-center bg-white rounded-full">
               <ArrowLeft />
             </button>
-            <button className="next w-16 h-16 cursor-pointer ms-3 flex justify-center items-center bg-white rounded-full">
+            <button className="next md:w-16 md:h-16 w-14 h-14 cursor-pointer ms-3 flex justify-center items-center bg-white rounded-full">
               <ArrowRight />
             </button>
           </div>

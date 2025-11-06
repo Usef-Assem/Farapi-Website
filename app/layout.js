@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Farapi",
-  description: "We are a team of young Egyptian entrepreneurs aiming to become the next tech giant in the MENA region and globally. Established in 2023, our goal is to be a hub for Egypt's top tech talents.",
+  description: "Delivering smart, reliable solutions powered by diverse expertise. We build technology that drives growth, enhances performance, and creates lasting impact.",
 };
 
 export default function RootLayout({ children }) {

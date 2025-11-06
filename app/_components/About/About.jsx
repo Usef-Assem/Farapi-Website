@@ -9,7 +9,7 @@ function About() {
  <div className="relative background overflow-hidden" id='about'>
   <div className="white-overlay absolute inset-0 z-10"></div>
 
-  <section className="px-6 md:px-12 lg:px-16 py-16 md:py-24 relative z-20 font-[Salmond-medium]">
+  <section className="px-6 md:px-12 lg:px-16 py-14 md:py-24 relative z-20 font-[Salmond-medium]">
     <div className="grid md:grid-cols-5 grid-cols-1 gap-12 lg:gap-0 items-start mx-auto">
       {/* Left Column */}
       <div className='h-full flex flex-col justify-between md:col-span-2'>

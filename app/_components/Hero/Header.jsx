@@ -31,12 +31,12 @@ export default function Header() {
 
       <section className="absolute mt-20 md:mt-30 inset-0 z-20 px-6 md:px-12 lg:px-20 pt-16 pb-20 md:pt-24 md:pb-32 flex flex-col justify-center">
         <div className="font-[Salmond-medium]">
-          <h1 className="text-white text-[34px] lg:w-5xl md:text-6xl lg:text-[75px] font-[Salmond-semibold] leading-[140%]">
+          <h1 className="text-white text-[36px] lg:w-5xl md:text-6xl lg:text-[75px] font-[Salmond-semibold] leading-[140%]">
             We Build Tailored Software That Fits Your Business
           </h1>
             
           <div className="flex flex-col md:flex-col lg:flex-row justify-between items-start lg:items-center w-full gap-6 lg:gap-0">
-            <p className="text-[#FCFCFC] mt-2 font-[Salmond-medium] text-base md:text-[20px] mb-0 ">
+            <p className="text-[#FCFCFC] mt-2 text-sm font-[Salmond-medium] md:text-[20px] mb-0 ">
               We turn your ideas into powerful, tailored software that delivers impact.
             </p>
             <div className="">
@@ -50,9 +50,9 @@ export default function Header() {
           <div>
             <div className="flex items-center gap-2">
               <div className="flex -space-x-5">
-                <div className="w-16 h-16 rounded-full person-1 border-2 border-teal-900"></div>
-                <div className="w-16 h-16 rounded-full person-2 border-2 border-teal-900"></div>
-                <div className="w-16 h-16 rounded-full person-3 border-2 border-teal-900"></div>
+                <div className="md:w-16 md:h-16 w-10 h-10 rounded-full person-1 border-2 border-teal-900"></div>
+                <div className="md:w-16 md:h-16 w-10 h-10 rounded-full person-2 border-2 border-teal-900"></div>
+                <div className="md:w-16 md:h-16 w-10 h-10 rounded-full person-3 border-2 border-teal-900"></div>
               </div>
               <p className="text-white font-[Salmond-news] md:text-[20px]">
                 7+ People already trusted us.
@@ -65,21 +65,21 @@ export default function Header() {
               <p className="text-[#F4F0EC] text-[18px] md:text-[22px] mb-2">
                 Clicks
               </p>
-              <p className="text-[#F4F0EC] text-2xl md:text-5xl mt-8">1M+</p>
+              <p className="text-[#F4F0EC] text-4xl md:text-5xl mt-8">1M+</p>
             </div>
 
             <div>
               <p className="text-[#F4F0EC] text-[18px] md:text-[22px] mb-2">
                 Countries
               </p>
-              <p className="text-[#F4F0EC] text-2xl md:text-5xl mt-8">6</p>
+              <p className="text-[#F4F0EC] text-4xl md:text-5xl mt-8">6</p>
             </div>
 
             <div>
               <p className="text-[#F4F0EC] text-[18px] md:text-[22px] mb-2">
                 Our Possibilities
               </p>
-              <p className="text-[#F4F0EC] text-2xl md:text-5xl font-[Salmond-semibold] mt-8">∞</p>
+              <p className="text-[#F4F0EC] text-4xl md:text-5xl font-[Salmond-semibold] mt-8">∞</p>
             </div>
           </div>
         </div>
