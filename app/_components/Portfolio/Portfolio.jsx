@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 import PortfolioSlider from './PortfolioSlider'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import dynamic from 'next/dynamic'
-import project1 from '../../../public/Images/Aklni.png'
+import project1 from '../../../public/Images/8.png'
 import project2 from '../../../public/Images/4.png'
-import project3 from '../../../public/Images/gridkey.png'
-import project4 from '../../../public/Images/instagold.png'
+import project3 from '../../../public/Images/6.png'
+import project4 from '../../../public/Images/7.png'
 import project5 from '../../../public/Images/5.png'
 import project6 from '../../../public/Images/3.png'
 
@@ -33,7 +33,7 @@ const slides = [
   },
   {
     imgMobile: project4,
-    imgDesktop: "/Images/instagold (1).png",
+    imgDesktop: "/Images/Instagold (1).png",
     title: "Instagold",
     subtitle: "Fintech for gold tracking"
   },
@@ -52,39 +52,7 @@ const slides = [
 ]
 
 
-  // const desktopSlides = [
-  //   {
-  //     img: '/Images/Aklne (1).png',
-  //     title: "Aklne App",
-  //     subtitle: "Smart app for daily meal choices.",
-  //   },
-  //   {
-  //     img: '/Images/eyedias (1).png',
-  //     title: "Eyedias Website",
-  //     subtitle: "Connecting creatives with businesses",
-  //   },
-  //   {
-  //     img: '/Images/gridkey (1).png',
-  //     title: "gridkey",
-  //     subtitle: "Financial asset management platform",
-  //   },
-  //   {
-  //     img: '/Images/instagold (1).png',
-  //     title: "Instagold",
-  //     subtitle: "Fintech for gold tracking",
-  //   },
-  //   {
-  //     img: '/Images/noa (1).png',
-  //     title: "noa",
-  //     subtitle: "IoT Fleet Management System",
-  //   },
-  //   {
-  //     img: '/Images/seen (2).png',
-  //     title: "Seen",
-  //     subtitle: "An app for mental health support",
-  //   },
- 
-  // ]
+
 
   const [currentSlide, setCurrentSlide] = useState(0)
 
@@ -100,14 +68,15 @@ const slides = [
         </div>
 
         <div className="text-left font-[Salmond-medium] md:text-left text-[#002733]  transition-all duration-500 w-full md:w-1/2 lg:w-[40%]">
-          <div className='w-full'>
-          <h4 className="text-[22px] md:text-xl text-start lg:text-start leading-[160%]">
-            {slides[currentSlide].title}
-          </h4>
-          <p className="text-[22px] font-[Salmond-news] w-full leading-[160%]">
-            {slides[currentSlide].subtitle}
-          </p>
-          </div>
+<div className='w-full h-[120px] md:h-auto overflow-hidden'>
+   <h4 className="text-[22px] md:text-xl text-start leading-[160%]">
+      {slides[currentSlide].title}
+   </h4>
+   <p className="text-[22px] font-[Salmond-news] leading-[160%]">
+      {slides[currentSlide].subtitle}
+   </p>
+</div>
+
 
           <div className="slider-buttons flex mt-5 justify-start lg:justify-start">
             <button className="prev md:w-16 md:h-16 w-14 h-14 cursor-pointer flex justify-center items-center bg-white rounded-full">

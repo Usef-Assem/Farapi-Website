@@ -17,7 +17,7 @@ function Footer() {
       <div className="section-background z-10 opacity-55">
 
       </div>
-        <footer className="relative z-30 w-full md:pt-20 pt-14 pb-10 px-6 md:px-8 text-white">
+        <footer className="relative z-30 w-full md:pt-20 pt-14 pb-10 px-2 md:px-6 text-white">
             <div className="absolute bottom-[-120px] right-[-100px] w-[400px] h-[400px] rounded-full 
                                     bg-linear-to-l from-white/40 to-transparent blur-3xl opacity-70"></div>
                     <div className="absolute bottom-[-120px] left-[-100px] w-[400px] h-[400px] rounded-full 
@@ -26,11 +26,11 @@ function Footer() {
             
             {/* ---------- Left Column (4 cols) ---------- */}
             <div className="col-span-1 lg:col-span-4 border-b lg:border-b-0 lg:border-r border-[#FFFFFF80] pb-8 lg:pb-0 flex flex-col gap-5">
-              <div className="logo w-[145px] h-[63px]">
-                <Image src={Logo} alt="Farapi" className="object-contain" />
+              <div className="logo w-[145px] h-[63px] flex justify-start items-start">
+                <Image src={Logo} alt="Farapi" />
               </div>
 
-              <p className="text-[#FFFFFFCC] w-70 font-[Salmond-Regular] text-lg leading-7">
+              <p className="text-[#FFFFFFCC] w-70 font-[Salmond-Regular] ms-2 text-lg leading-7">
                 Building meaningful technology that empowers growth.             
               </p>
 
@@ -41,7 +41,7 @@ function Footer() {
             <div className="col-span-1 lg:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10">
               
               {/* Farapi Column */}
-              <div>
+              <div className='ms-2 md:ms-0'>
                 <h4 className="font-[Salmond-medium] text-lg mb-4">Farapi</h4>
                 <ul className="space-y-3 font-[Salmond] text-[16px] md:text-lg">
                   <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Home</a></li>
@@ -63,7 +63,7 @@ function Footer() {
               </div>
 
               {/* Social Media Column */}
-<div className=''>
+<div className='ms-2 md:ms-0'>
   <h4 className="font-[Salmond-medium] lg:ms-4 lg:text-center text-lg mb-4">Social Media</h4>
   <p className="text-[#FFFFFFCC] lg:text-end lg:me-4 font-[Salmond-medium] md:text-lg text-base">
     <a href="mailto:contact@farapi.ai" className="hover:text-[#58F468] transition-colors">contact@farapi.ai</a>
