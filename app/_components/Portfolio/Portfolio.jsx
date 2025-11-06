@@ -4,47 +4,87 @@ import PortfolioSlider from './PortfolioSlider'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import dynamic from 'next/dynamic'
 import project1 from '../../../public/Images/Aklni.png'
-import project2 from '../../../public/Images/eyedias.png'
+import project2 from '../../../public/Images/4.png'
 import project3 from '../../../public/Images/gridkey.png'
 import project4 from '../../../public/Images/instagold.png'
-import project5 from '../../../public/Images/noa.png'
-import project6 from '../../../public/Images/seen.png'
+import project5 from '../../../public/Images/5.png'
+import project6 from '../../../public/Images/3.png'
 
 
 function Portfolio() {
-  const slides = [
-    {
-      img: project1,
-      title: "Aklne App",
-      subtitle: "Smart app for daily meal choices.",
-    },
-    {
-      img: project2,
-      title: "Eyedias Website",
-      subtitle: "Connecting creatives with businesses",
-    },
-    {
-      img: project3,
-      title: "gridkey",
-      subtitle: "Financial asset management platform",
-    },
-    {
-      img: project4,
-      title: "Instagold",
-      subtitle: "Fintech for gold tracking",
-    },
-    {
-      img: project5,
-      title: "noa",
-      subtitle: "IoT Fleet Management System",
-    },
-    {
-      img: project6,
-      title: "Seen",
-      subtitle: "An app for mental health support",
-    },
+const slides = [
+  {
+    imgMobile: project1,
+    imgDesktop: "/Images/Aklne (1).png", 
+    title: "Aklne App",
+    subtitle: "Smart app for daily meal choices."
+  },
+  {
+    imgMobile: project2,
+    imgDesktop: "/Images/eyedias (1).png",
+    title: "Eyedias Website",
+    subtitle: "Connecting creatives with businesses"
+  },
+  {
+    imgMobile: project3,
+    imgDesktop: "/Images/gridkey (1).png",
+    title: "gridkey",
+    subtitle: "Financial asset management platform"
+  },
+  {
+    imgMobile: project4,
+    imgDesktop: "/Images/instagold (1).png",
+    title: "Instagold",
+    subtitle: "Fintech for gold tracking"
+  },
+  {
+    imgMobile: project5,
+    imgDesktop: "/Images/noa (1).png",
+    title: "noa",
+    subtitle: "IoT Fleet Management System"
+  },
+  {
+    imgMobile: project6,
+    imgDesktop: "/Images/seen (2).png",
+    title: "Seen",
+    subtitle: "An app for mental health support"
+  },
+]
+
+
+  // const desktopSlides = [
+  //   {
+  //     img: '/Images/Aklne (1).png',
+  //     title: "Aklne App",
+  //     subtitle: "Smart app for daily meal choices.",
+  //   },
+  //   {
+  //     img: '/Images/eyedias (1).png',
+  //     title: "Eyedias Website",
+  //     subtitle: "Connecting creatives with businesses",
+  //   },
+  //   {
+  //     img: '/Images/gridkey (1).png',
+  //     title: "gridkey",
+  //     subtitle: "Financial asset management platform",
+  //   },
+  //   {
+  //     img: '/Images/instagold (1).png',
+  //     title: "Instagold",
+  //     subtitle: "Fintech for gold tracking",
+  //   },
+  //   {
+  //     img: '/Images/noa (1).png',
+  //     title: "noa",
+  //     subtitle: "IoT Fleet Management System",
+  //   },
+  //   {
+  //     img: '/Images/seen (2).png',
+  //     title: "Seen",
+  //     subtitle: "An app for mental health support",
+  //   },
  
-  ]
+  // ]
 
   const [currentSlide, setCurrentSlide] = useState(0)
 
