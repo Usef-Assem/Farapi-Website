@@ -17,9 +17,13 @@ export const metadata = {
   title: "Farapi",
   description: "Delivering smart, reliable solutions powered by diverse expertise. We build technology that drives growth, enhances performance, and creates lasting impact.",
   icons: {
-    icon: '/icon.svg',
+    icon: [
+      { url: "/favicon-light.svg", media: "(prefers-color-scheme: light)" },
+      { url: "/favicon-dark.svg", media: "(prefers-color-scheme: dark)" }
+    ],
   },
 };
+
 
 
 export default function RootLayout({ children }) {
