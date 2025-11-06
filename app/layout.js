@@ -17,7 +17,7 @@ export const metadata = {
   title: "Farapi",
   description: "Delivering smart, reliable solutions powered by diverse expertise. We build technology that drives growth, enhances performance, and creates lasting impact.",
   icons: {
-    icon: '/icon.png',
+    icon: '/icon.svg',
   },
 };
 
