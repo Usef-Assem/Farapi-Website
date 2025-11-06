@@ -69,7 +69,7 @@ function PortfolioSlider({ slides, setCurrentSlide }) {
           <SwiperSlide key={index}>
             {({ isActive }) => (
               <div className={`relative group w-full flex mx-auto max-w-[1090px] transition-opacity duration-500 ${isActive ? 'opacity-100' : 'opacity-50'}`}>
-                <div className="relative w-full h-[250px] md:h-[400px] lg:h-[550px]">
+                <div className="relative w-full h-[330px] md:h-[400px] lg:h-[550px]">
                   <Image
                     src={slide.img}
                     alt={slide.title}

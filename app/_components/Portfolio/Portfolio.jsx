@@ -3,12 +3,12 @@ import React, { useState } from 'react'
 import PortfolioSlider from './PortfolioSlider'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import dynamic from 'next/dynamic'
-import project1 from '../../../public/Images/Aklne (1).png'
-import project2 from '../../../public/Images/eyedias (1).png'
-import project3 from '../../../public/Images/gridkey (1).png'
-import project4 from '../../../public/Images/Instagold (1).png'
-import project5 from '../../../public/Images/noa (1).png'
-import project6 from '../../../public/Images/Seen (1).png'
+import project1 from '../../../public/Images/Aklni.png'
+import project2 from '../../../public/Images/eyedias.png'
+import project3 from '../../../public/Images/gridkey.png'
+import project4 from '../../../public/Images/instagold.png'
+import project5 from '../../../public/Images/noa.png'
+import project6 from '../../../public/Images/seen.png'
 
 
 function Portfolio() {

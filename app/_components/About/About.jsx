@@ -14,7 +14,7 @@ function About() {
       {/* Left Column */}
       <div className='h-full flex flex-col justify-between md:col-span-2'>
         <div>
-        <p className="text-[#002733] text-[18px] tracking-[100%]">About</p>
+        <p className="text-[#002733] text-[18px] tracking-white">About</p>
         <h2 className="text-[#002733] text-4xl md:text-[40px] lg:text-[45px] font-[Salmond-semibold] mt-8">
           Who we are
         </h2>

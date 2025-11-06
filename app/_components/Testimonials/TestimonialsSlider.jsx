@@ -79,7 +79,7 @@ export default function TestimonialsSlider({ feedbacks, sliderRef }) {
                     ))}
                   </div>
 
-                  <h3 className="text-2xl font-[Salmond-medium] mb-2">
+                  <h3 className="text-[22px] font-[Salmond-medium] mb-2">
                     {feedback.ReviewTitle}
                   </h3>
                   <p className="text-base font-[Salmond-news] text-[#F5F4EE] leading-relaxed">
