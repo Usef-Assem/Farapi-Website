@@ -65,23 +65,14 @@ function Footer() {
               {/* Social Media Column */}
 <div className=''>
   <h4 className="font-[Salmond-medium] lg:ms-4 lg:text-center text-lg mb-4">Social Media</h4>
-  <div className="flex lg:justify-center lg:w-50 mb-4">
-    {/* <a href="#" className="w-9 h-9">
-      <FontAwesomeIcon icon={faFacebook} className="w-7 h-7" />
-    </a>
-    <a href="#" className="w-9 h-9">
-      <FontAwesomeIcon icon={faTwitter} className="w-7 h-7" />
-    </a>
-    <a href="#" className="w-9 h-9">
-      <FontAwesomeIcon icon={faInstagram} className="w-7 h-7" />
-    </a> */}
-    <Link href="https://www.linkedin.com/company/farapi/posts/?feedView=all" target='_blank' className="w-9 h-9">
-      <FontAwesomeIcon icon={faLinkedinIn} className="w-7 h-7" />
-    </Link>
-  </div>
   <p className="text-[#FFFFFFCC] lg:text-end lg:me-4 font-[Salmond-medium] md:text-lg text-base">
     <a href="mailto:contact@farapi.ai" className="hover:text-[#58F468] transition-colors">contact@farapi.ai</a>
   </p>
+  <div className="flex lg:justify-center lg:w-50 mt-5">
+    <Link href="https://www.linkedin.com/company/farapi/posts/?feedView=all" target='_blank' className="w-9 h-9">
+      <Image src='/Images/linkedin icon.svg' width={30} height={30} alt = 'linkedin icon' />
+    </Link>
+  </div>
 </div>
 
             </div>
