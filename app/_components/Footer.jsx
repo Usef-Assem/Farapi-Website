@@ -45,9 +45,9 @@ function Footer() {
                 <h4 className="font-[Salmond-medium] text-lg mb-4">Farapi</h4>
                 <ul className="space-y-3 font-[Salmond] text-[16px] md:text-lg">
                   <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Home</a></li>
-                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">About</a></li>
-                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Services</a></li>
-                  <li><a href="#" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Portfolio</a></li>
+                  <li><a href="#about" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">About</a></li>
+                  <li><a href="#services" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Services</a></li>
+                  <li><a href="#portfolio" className="text-[#FFFFFFCC] font-Regular hover:text-[#58F468] transition-colors">Portfolio</a></li>
                 </ul>
               </div>
 
@@ -65,8 +65,8 @@ function Footer() {
               {/* Social Media Column */}
 <div className=''>
   <h4 className="font-[Salmond-medium] lg:ms-4 lg:text-center text-lg mb-4">Social Media</h4>
-  <div className="flex lg:justify-end gap-3 mb-4">
-    <a href="#" className="w-9 h-9">
+  <div className="flex lg:justify-center lg:w-50 mb-4">
+    {/* <a href="#" className="w-9 h-9">
       <FontAwesomeIcon icon={faFacebook} className="w-7 h-7" />
     </a>
     <a href="#" className="w-9 h-9">
@@ -74,10 +74,10 @@ function Footer() {
     </a>
     <a href="#" className="w-9 h-9">
       <FontAwesomeIcon icon={faInstagram} className="w-7 h-7" />
-    </a>
-    <a href="#" className="w-9 h-9">
+    </a> */}
+    <Link href="https://www.linkedin.com/company/farapi/posts/?feedView=all" target='_blank' className="w-9 h-9">
       <FontAwesomeIcon icon={faLinkedinIn} className="w-7 h-7" />
-    </a>
+    </Link>
   </div>
   <p className="text-[#FFFFFFCC] lg:text-end lg:me-4 font-[Salmond-medium] md:text-lg text-base">
     <a href="mailto:contact@farapi.ai" className="hover:text-[#58F468] transition-colors">contact@farapi.ai</a>

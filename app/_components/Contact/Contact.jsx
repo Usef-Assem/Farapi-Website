@@ -50,49 +50,43 @@ function Contact() {
           <div className="bg-white rounded-3xl p-6 md:p-8">
             <h3 className="text-2xl md:text-3xl font-[Salmond-semibold] text-[#1B1B1B] mb-6">Contact Form</h3>
             
-            <form className="space-y-4">
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full px-4 py-3 lg:w-[488px] lg:h-16 border-[#E3E7ED] border rounded-lg font-[Salmond-medium] text-[#1a1a1a] placeholder:#7C7C7C focus:outline-none focus:ring-2 focus:ring-[#58F468]"
-              />
-              
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full px-4 py-3 lg:w-[488px] lg:h-16 border-[#E3E7ED] border rounded-lg font-[Salmond-medium] text-[#1a1a1a] placeholder:#7C7C7C focus:outline-none focus:ring-2 focus:ring-[#58F468]"
-              />
-              
-              {/* <input
-                type="tel"
-                placeholder="Phone Number"
-                className="w-full px-4 py-3 border-[#E3E7ED] border rounded-lg font-[Salmond-medium] text-[#1a1a1a] placeholder:#7C7C7C focus:outline-none focus:ring-2 focus:ring-[#58F468]"
-              /> */}
-              
-              <textarea
-                placeholder="Message"
-                rows="4"
-                className="w-full px-4 py-3 lg:w-[488px] lg:h-48 border-[#E3E7ED] border rounded-lg font-[Salmond-medium] text-[#1a1a1a] placeholder:#7C7C7C focus:outline-none focus:ring-2 focus:ring-[#58F468] resize-none"
-              ></textarea>
+<form 
+  action="https://formspree.io/f/xvgapvkb" 
+  method="POST" 
+  className="space-y-4"
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="Name"
+    className="w-full px-4 py-3 lg:w-[488px] lg:h-16 border-[#E3E7ED] border rounded-lg font-[Salmond-medium] text-[#1a1a1a] placeholder:#7C7C7C focus:outline-none focus:ring-2 focus:ring-[#58F468]"
+    required
+  />
 
-              <div className="flex items-center gap-3">
-                <input
-                  type="checkbox"
-                  id="terms"
-                  className=" w-4 h-4 accent-[#58F468] cursor-pointer"
-                />
-                <label htmlFor="terms" className="text-lg leading-[26px] mt-[5px] font-[Salmond-news] text-[#7C7C7C]">
-                  I agree to the terms and privacy policy.
-                </label>
-              </div>
+  <input
+    type="email"
+    name="email"
+    placeholder="Email"
+    className="w-full px-4 py-3 lg:w-[488px] lg:h-16 border-[#E3E7ED] border rounded-lg font-[Salmond-medium] text-[#1a1a1a] placeholder:#7C7C7C focus:outline-none focus:ring-2 focus:ring-[#58F468]"
+    required
+  />
 
-              <button
-                type="submit"
-                className="bg-[#002733] px-9 text-[16px] text-white py-3 rounded-full font-[Salmond-medium] hover:bg-[#1B1B1B] cursor-pointer transition-all duration-300"
-              >
-                Send
-              </button>
-            </form>
+  <textarea
+    name="message"
+    rows="4"
+    placeholder="Message"
+    className="w-full px-4 py-3 lg:w-[488px] lg:h-48 border-[#E3E7ED] border rounded-lg font-[Salmond-medium] text-[#1a1a1a] placeholder:#7C7C7C focus:outline-none focus:ring-2 focus:ring-[#58F468] resize-none"
+    required
+  ></textarea>
+
+  <button
+    type="submit"
+    className="bg-[#002733] px-9 text-[16px] text-white py-3 rounded-full font-[Salmond-medium] hover:bg-[#1B1B1B] cursor-pointer transition-all duration-300"
+  >
+    Send
+  </button>
+</form>
+
           </div>
         </div>
       </section>
