@@ -88,14 +88,14 @@ const sliderRef = useRef(null)
             {/* Header */}
             <div className="flex flex-col md:flex-row justify-between w-full items-start md:items-center mb-12 gap-6 md:gap-0">
               <div>
-                <p className="text-white text-[18px] mb-2 font-[Salmond-medium] tracking-wide">
+                <p className="text-white text-[18px] font-[Salmond-medium] tracking-wide">
                   Services
                 </p>
-                <h2 className="text-white text-4xl md:text-3xl lg:text-[56px] font-[Salmond-semibold]">
+                <h2 className="text-white text-4xl mt-8 md:text-3xl lg:text-[56px] font-[Salmond-semibold]">
                   Your Software Partner
                 </h2>
               </div>
-              <button onClick={handleNext} className="flex items-center gap-4 md:text-xl text-base text-[#F5F4EE] rounded-full cursor-pointer font-[Salmond-medium]">
+              <button onClick={handleNext} className="flex items-center gap-4 md:mt-8 md:text-xl text-base text-[#F5F4EE] rounded-full cursor-pointer font-[Salmond-medium]">
                 view more
                 <div className="md:w-16 md:h-16 w-14 h-14 bg-white rounded-full flex items-center justify-center hover:bg-green-400 transition-all duration-200">
                   <ArrowRight className="w-5 h-5 text-black" />

@@ -33,7 +33,7 @@ function Navbar() {
             target="_blank"
             className="hidden md:flex items-center gap-2 text-lg text-[#F4F0EC] font-[Salmond-medium] hover:text-[#58F468] transition-colors"
           >
-            Contact US
+            Contact us
           </Link>
           
           <div className="hidden md:flex justify-center items-center bg-[#58F468] w-12 h-12 rounded-full cursor-pointer hover:scale-105 transition-transform">
@@ -74,14 +74,14 @@ function Navbar() {
           } md:flex`}
           id="navbar-menu"
         >
-          <ul className="flex flex-col font-medium text-lg p-3 lg:pl-2 lg:pr-8 w-full mt-4 rounded-lg backdrop-blur-lg bg-[#E9EAE51F] md:bg-transparent md:flex-row items-center md:justify-between
-           md:mt-0 md:backdrop-blur-none border border-white/20 md:border-0">
+          <ul className="flex flex-col font-medium md:text-lg p-3 lg:pl-2 lg:pr-8 w-full mt-4 rounded-lg bg-[#E9EAE51F]  md:bg-transparent md:flex-row items-center md:justify-between
+           md:mt-0 md:backdrop-blur-none border backdrop-blur-lg border-white/20 md:border-0">
             {navLinks.map((link, index) => (
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className={`py-2 px-3 md:hover:text-[#58F468] lg:w-[120] lg:h-[56] flex justify-center items-center transition-colors ${
-                    index === 0 ? "text-[#002733]  font-[Salmond-semibold] bg-[#F4F0EC] rounded-full" : "text-white lg:ms-2 md:ms-0 font-[Salmond-medium]"
+                  className={`md:hover:text-[#58F468] lg:w-[120] lg:h-[56] flex justify-center items-center transition-colors ${
+                    index === 0 ? "h-12 w-24 px-3 text-[#002733] font-[Salmond-semibold] bg-[#F4F0EC] rounded-full" : "text-white py-5 px-3 lg:ms-2 leading-[100%] md:ms-0 font-[Salmond-medium]"
                   }`}
                   aria-current={index === 0 ? "page" : undefined}
                   onClick={() => setIsOpen(false)}
@@ -95,14 +95,14 @@ function Navbar() {
             <li className="md:hidden mt-2">
               <Link href={'https://calendly.com/omar-farapi/30min'}
                 target="_blank"
-                className="w-full flex items-center justify-center gap-2 bg-white pl-4 pr-2 py-2 rounded-full hover:bg-[#58F468] transition-all duration-300 group"
+                className="w-[156px] h-12 flex items-center justify-center gap-2 border border-[#BDBFB7] pl-4 pr-1 py-1 rounded-full hover:bg-[#58F468] transition-all duration-300 group"
                 onClick={() => setIsOpen(false)}
               >
-                <span className="font-[Salmond-medium] text-[15px] text-[#002733]">
-                  Contact US
+                <span className="font-[Salmond-medium] text-[15px] text-white">
+                  Contact us
                 </span>
-                <div className="w-8 h-8 bg-[#58F468] rounded-full flex items-center justify-center group-hover:bg-white transition-all duration-300">
-                  <ArrowRight className="w-4 h-4 text-[#002733] group-hover:text-[#002733]" />
+                <div className="w-10 h-10 bg-[#58F468] rounded-full flex items-center justify-center group-hover:bg-white transition-all duration-300">
+                  <ArrowRight className="w-5 h-5 text-[#002733] group-hover:text-[#002733]" />
                 </div>
               </Link>
             </li>

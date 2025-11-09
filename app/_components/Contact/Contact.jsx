@@ -48,7 +48,7 @@ function Contact() {
 
           {/* Right Side - Contact Form */}
           <div className="bg-white rounded-3xl p-6 md:p-8">
-            <h3 className="text-2xl md:text-3xl font-[Salmond-semibold] text-[#1B1B1B] mb-6">Contact Form</h3>
+            <h3 className="text-2xl md:text-3xl font-[Salmond-semibold] text-[#1B1B1B] mb-6">Contact us</h3>
             
 <form 
   action="https://formspree.io/f/xvgapvkb" 
