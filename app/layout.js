@@ -18,8 +18,8 @@ export const metadata = {
   description: "Delivering smart, reliable solutions powered by diverse expertise. We build technology that drives growth, enhances performance, and creates lasting impact.",
   icons: {
     icon: [
-      { url: "/favicon-light.svg", media: "(prefers-color-scheme: light)" },
-      { url: "/favicon-dark.svg", media: "(prefers-color-scheme: dark)" }
+      { url: "/favicon-light.svg", media: "(prefers-color-scheme: dark)" },
+      { url: "/favicon-dark.svg", media: "(prefers-color-scheme: light)" }
     ],
   },
 };

@@ -80,8 +80,8 @@ function Navbar() {
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className={`md:hover:text-[#58F468] lg:w-[120] lg:h-[56] flex justify-center items-center transition-colors ${
-                    index === 0 ? "h-12 w-24 px-3 text-[#002733] font-[Salmond-semibold] bg-[#F4F0EC] rounded-full" : "text-white py-5 px-3 lg:ms-2 leading-[100%] md:ms-0 font-[Salmond-medium]"
+                  className={`lg:w-[120] lg:h-[56] flex justify-center items-center ${
+                    index === 0 ? "h-12 w-24 px-3 text-[#002733] font-[Salmond-semibold] bg-[#F4F0EC] rounded-full" : "text-white md:hover:text-[#58F468] transition-colors duration-200 py-5 px-3 lg:ms-2 leading-[100%] md:ms-0 font-[Salmond-medium]"
                   }`}
                   aria-current={index === 0 ? "page" : undefined}
                   onClick={() => setIsOpen(false)}

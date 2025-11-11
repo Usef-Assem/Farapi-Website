@@ -15,39 +15,45 @@ function Portfolio() {
 const slides = [
   {
     imgMobile: project1,
-    imgDesktop: "/Images/Aklne (1).png", 
+    imgDesktop: "/Images/Aklne.png", 
     title: "Aklne App",
-    subtitle: "Smart app for daily meal choices."
+    subtitle: "Smart app for daily meal choices.",
+    href: 'https://aklne.com/'
   },
   {
     imgMobile: project2,
-    imgDesktop: "/Images/eyedias (1).png",
+    imgDesktop: "/Images/eyedias.png",
     title: "Eyedias Website",
-    subtitle: "Connecting creatives with businesses"
+    subtitle: "Connecting creatives with businesses",
+    href: 'https://www.eyedias.co/'
   },
   {
     imgMobile: project3,
-    imgDesktop: "/Images/gridkey (1).png",
+    imgDesktop: "/Images/gridkey.png",
     title: "gridkey",
-    subtitle: "Financial asset management platform"
+    subtitle: "Financial asset management platform",
+    href: 'https://gridkey.co/'
   },
   {
     imgMobile: project4,
-    imgDesktop: "/Images/Instagold (1).png",
+    imgDesktop: "/Images/Instagold.png",
     title: "Instagold",
-    subtitle: "Fintech for gold tracking"
+    subtitle: "Fintech for gold tracking",
+    href: 'https://instagold.org/dashboard'
   },
   {
     imgMobile: project5,
-    imgDesktop: "/Images/noa (1).png",
+    imgDesktop: "/Images/noa.png",
     title: "noa",
-    subtitle: "IoT Fleet Management System"
+    subtitle: "IoT Fleet Management System",
+    href: 'https://noaone.com/'
   },
   {
     imgMobile: project6,
-    imgDesktop: "/Images/seen (2).png",
+    imgDesktop: "/Images/seen.png",
     title: "Seen",
-    subtitle: "An app for mental health support"
+    subtitle: "An app for mental health support",
+    href: 'https://play.google.com/store/apps/details?id=com.werseen.app&hl=en'
   },
 ]
 
