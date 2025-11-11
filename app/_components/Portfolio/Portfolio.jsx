@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import PortfolioSlider from './PortfolioSlider'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
-import dynamic from 'next/dynamic'
 import project1 from '../../../public/Images/8.png'
 import project2 from '../../../public/Images/4.png'
 import project3 from '../../../public/Images/6.png'
@@ -36,7 +35,7 @@ const slides = [
   },
   {
     imgMobile: project4,
-    imgDesktop: "/Images/Instagold.png",
+    imgDesktop: "/Images/instagold.png",
     title: "Instagold",
     subtitle: "Fintech for gold tracking",
     href: 'https://instagold.org/dashboard'
