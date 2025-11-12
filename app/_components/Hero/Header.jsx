@@ -43,8 +43,8 @@ export default function Header() {
         </div>
 
         {/* الإحصائيات */}
-        <div className="mt-20 flex flex-col md:flex-col lg:flex-row justify-between items-start lg:items-center max-w-7xl gap-8 lg:gap-0">
-          <div>
+        <div className="mt-14 flex flex-col md:flex-col lg:flex-row justify-between items-start lg:items-end max-w-7xl gap-8 lg:gap-0">
+          <div className="">
             <LetsTalkButton bgColor={'#F4F0EC'}/>
           </div>
 
