@@ -39,25 +39,13 @@ export default function Header() {
             <p className="text-[#FCFCFC] mt-2 text-sm font-[Salmond-medium] md:text-[20px] mb-0 ">
               We turn your ideas into powerful, tailored software that delivers impact.
             </p>
-            <div className="">
-            <LetsTalkButton bgColor={'#F4F0EC'}/>
-            </div>
           </div>
         </div>
 
         {/* الإحصائيات */}
         <div className="mt-20 flex flex-col md:flex-col lg:flex-row justify-between items-start lg:items-center max-w-7xl gap-8 lg:gap-0">
           <div>
-            <div className="flex items-center gap-2">
-              <div className="flex -space-x-5">
-                <div className="md:w-16 md:h-16 w-10 h-10 rounded-full person-1 border-2 border-teal-900"></div>
-                <div className="md:w-16 md:h-16 w-10 h-10 rounded-full person-2 border-2 border-teal-900"></div>
-                <div className="md:w-16 md:h-16 w-10 h-10 rounded-full person-3 border-2 border-teal-900"></div>
-              </div>
-              <p className="text-white font-[Salmond-news] md:text-[20px]">
-                7+ People already trusted us.
-              </p>
-            </div>
+            <LetsTalkButton bgColor={'#F4F0EC'}/>
           </div>
 
           <div className="flex font-[Salmond-medium] flex-wrap justify-start md:justify-start lg:justify-between items-center gap-6 md:gap-12 lg:gap-20">
