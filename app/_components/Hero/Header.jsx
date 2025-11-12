@@ -29,9 +29,10 @@ export default function Header() {
       {/* <div className="light-circle-bottom" aria-hidden="true"></div> */}
 
 
-      <section className="absolute mt-20 md:mt-30 inset-0 z-20 px-6 md:px-12 lg:px-20 pt-16 pb-20 md:pt-24 lg:pt-20 md:pb-32 flex flex-col lg:justify-between justify-center">
-        <div className="font-[Salmond-medium] ">
-          <h1 className="text-white text-[36px] lg:w-5xl md:text-6xl lg:text-[75px] font-[Salmond-semibold] leading-[140%]">
+      <section className="absolute z-20 flex justify-center items-center inset-0">
+        <div className="lg:mt-35 h-[450px] w-[90%] flex flex-col justify-between">
+        <div className="font-[Salmond-medium]">
+          <h1 className="text-white text-[36px] lg:w-6xl md:text-6xl lg:text-[80px] font-[Salmond-semibold] leading-[140%]">
             We Build Tailored Software That Fits Your Business
           </h1>
             
@@ -43,7 +44,7 @@ export default function Header() {
         </div>
 
         {/* الإحصائيات */}
-          <div className="flex mt-22 flex-col md:flex-col lg:flex-row justify-between items-start lg:items-end max-w-7xl gap-8 lg:gap-0 lg:pb-32">
+          <div className="flex flex-col md:flex-col md:mt-20 lg:flex-row justify-between items-start lg:items-end max-w-7xl gap-8 lg:gap-0">
           <div>
             <LetsTalkButton bgColor={'#F4F0EC'}/>
           </div>
@@ -70,6 +71,7 @@ export default function Header() {
               <p className="text-[#F4F0EC] text-4xl md:text-5xl font-[Salmond-semibold] mt-8">∞</p>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </div>
