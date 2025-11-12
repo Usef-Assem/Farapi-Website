@@ -4,10 +4,29 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Logo from '../../public/Images/Logo.png';
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+  function handleClickOutside(event) {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  }
+
+  if (isOpen) {
+    document.addEventListener("mousedown", handleClickOutside);
+  } else {
+    document.removeEventListener("mousedown", handleClickOutside);
+  }
+
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [isOpen]);
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -69,6 +88,7 @@ function Navbar() {
 
         {/* Navigation Links */}
         <div
+          ref={menuRef}
           className={`items-center justify-between md:bg-[#E9EAE51F] rounded-full w-full md:w-[370px] lg:w-[520px] h-[72px] ${
             isOpen ? "block" : "hidden"
           } md:flex`}
