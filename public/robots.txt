@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://farapi-website-phi.vercel.app/
+Host: https://farapi-website-phi.vercel.app
 
 # Sitemaps
 Sitemap: https://farapi-website-phi.vercel.app/sitemap.xml
